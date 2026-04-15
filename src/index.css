@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+.ppdt-haze {
+  filter: grayscale(100%) blur(1.2px) contrast(1.15) brightness(0.95);
+}

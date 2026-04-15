@@ -1,0 +1,6562 @@
+[
+  {
+    "id": 1,
+    "file": "ppdt_0001.jpg",
+    "page": 1,
+    "width": 720,
+    "height": 612,
+    "category": "group",
+    "scores": {
+      "rural": 0.1852,
+      "urban": 0.1905,
+      "military": 0.202,
+      "nature": 0.2117,
+      "group": 0.2346,
+      "solo": 0.2221
+    }
+  },
+  {
+    "id": 2,
+    "file": "ppdt_0002.jpg",
+    "page": 2,
+    "width": 720,
+    "height": 561,
+    "category": "group",
+    "scores": {
+      "rural": 0.1787,
+      "urban": 0.2359,
+      "military": 0.2116,
+      "nature": 0.1842,
+      "group": 0.2507,
+      "solo": 0.2139
+    }
+  },
+  {
+    "id": 3,
+    "file": "ppdt_0003.jpg",
+    "page": 3,
+    "width": 476,
+    "height": 250,
+    "category": "military",
+    "scores": {
+      "rural": 0.1631,
+      "urban": 0.1658,
+      "military": 0.2531,
+      "nature": 0.2063,
+      "group": 0.2139,
+      "solo": 0.2127
+    }
+  },
+  {
+    "id": 4,
+    "file": "ppdt_0004.jpg",
+    "page": 4,
+    "width": 300,
+    "height": 360,
+    "category": "group",
+    "scores": {
+      "rural": 0.2057,
+      "urban": 0.1753,
+      "military": 0.1878,
+      "nature": 0.1619,
+      "group": 0.207,
+      "solo": 0.1965
+    }
+  },
+  {
+    "id": 5,
+    "file": "ppdt_0005.jpg",
+    "page": 5,
+    "width": 1280,
+    "height": 720,
+    "category": "group",
+    "scores": {
+      "rural": 0.2069,
+      "urban": 0.193,
+      "military": 0.2056,
+      "nature": 0.2145,
+      "group": 0.255,
+      "solo": 0.2248
+    }
+  },
+  {
+    "id": 6,
+    "file": "ppdt_0006.jpg",
+    "page": 6,
+    "width": 640,
+    "height": 480,
+    "category": "group",
+    "scores": {
+      "rural": 0.2085,
+      "urban": 0.2036,
+      "military": 0.1877,
+      "nature": 0.2184,
+      "group": 0.2607,
+      "solo": 0.2172
+    }
+  },
+  {
+    "id": 7,
+    "file": "ppdt_0007.jpg",
+    "page": 7,
+    "width": 720,
+    "height": 413,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1773,
+      "urban": 0.1901,
+      "military": 0.1906,
+      "nature": 0.1904,
+      "group": 0.2364,
+      "solo": 0.2468
+    }
+  },
+  {
+    "id": 8,
+    "file": "ppdt_0008.jpg",
+    "page": 8,
+    "width": 642,
+    "height": 527,
+    "category": "group",
+    "scores": {
+      "rural": 0.1908,
+      "urban": 0.1905,
+      "military": 0.2138,
+      "nature": 0.1874,
+      "group": 0.2199,
+      "solo": 0.1929
+    }
+  },
+  {
+    "id": 9,
+    "file": "ppdt_0009.jpg",
+    "page": 9,
+    "width": 1080,
+    "height": 834,
+    "category": "group",
+    "scores": {
+      "rural": 0.2076,
+      "urban": 0.205,
+      "military": 0.1771,
+      "nature": 0.1734,
+      "group": 0.2195,
+      "solo": 0.211
+    }
+  },
+  {
+    "id": 10,
+    "file": "ppdt_0010.jpg",
+    "page": 10,
+    "width": 1258,
+    "height": 975,
+    "category": "group",
+    "scores": {
+      "rural": 0.1855,
+      "urban": 0.1906,
+      "military": 0.2075,
+      "nature": 0.1789,
+      "group": 0.2222,
+      "solo": 0.2133
+    }
+  },
+  {
+    "id": 11,
+    "file": "ppdt_0011.jpg",
+    "page": 11,
+    "width": 720,
+    "height": 551,
+    "category": "group",
+    "scores": {
+      "rural": 0.1657,
+      "urban": 0.2176,
+      "military": 0.1814,
+      "nature": 0.1934,
+      "group": 0.2352,
+      "solo": 0.2154
+    }
+  },
+  {
+    "id": 12,
+    "file": "ppdt_0012.jpg",
+    "page": 12,
+    "width": 720,
+    "height": 550,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2053,
+      "urban": 0.1793,
+      "military": 0.1864,
+      "nature": 0.2574,
+      "group": 0.203,
+      "solo": 0.2182
+    }
+  },
+  {
+    "id": 13,
+    "file": "ppdt_0013.jpg",
+    "page": 13,
+    "width": 1261,
+    "height": 975,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2221,
+      "urban": 0.1973,
+      "military": 0.1859,
+      "nature": 0.2462,
+      "group": 0.2019,
+      "solo": 0.2278
+    }
+  },
+  {
+    "id": 14,
+    "file": "ppdt_0014.jpg",
+    "page": 14,
+    "width": 1280,
+    "height": 640,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2067,
+      "urban": 0.2198,
+      "military": 0.2137,
+      "nature": 0.2076,
+      "group": 0.2284,
+      "solo": 0.2318
+    }
+  },
+  {
+    "id": 15,
+    "file": "ppdt_0015.jpg",
+    "page": 15,
+    "width": 513,
+    "height": 366,
+    "category": "group",
+    "scores": {
+      "rural": 0.1603,
+      "urban": 0.1853,
+      "military": 0.2074,
+      "nature": 0.1709,
+      "group": 0.2385,
+      "solo": 0.2162
+    }
+  },
+  {
+    "id": 16,
+    "file": "ppdt_0016.jpg",
+    "page": 16,
+    "width": 1258,
+    "height": 975,
+    "category": "group",
+    "scores": {
+      "rural": 0.1688,
+      "urban": 0.1938,
+      "military": 0.2017,
+      "nature": 0.1876,
+      "group": 0.2365,
+      "solo": 0.2166
+    }
+  },
+  {
+    "id": 17,
+    "file": "ppdt_0017.jpg",
+    "page": 17,
+    "width": 1280,
+    "height": 640,
+    "category": "group",
+    "scores": {
+      "rural": 0.2241,
+      "urban": 0.2087,
+      "military": 0.2367,
+      "nature": 0.2129,
+      "group": 0.2496,
+      "solo": 0.2365
+    }
+  },
+  {
+    "id": 18,
+    "file": "ppdt_0018.jpg",
+    "page": 18,
+    "width": 720,
+    "height": 412,
+    "category": "group",
+    "scores": {
+      "rural": 0.1893,
+      "urban": 0.2219,
+      "military": 0.2087,
+      "nature": 0.1947,
+      "group": 0.2621,
+      "solo": 0.2116
+    }
+  },
+  {
+    "id": 19,
+    "file": "ppdt_0019.jpg",
+    "page": 19,
+    "width": 967,
+    "height": 666,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2299,
+      "urban": 0.1875,
+      "military": 0.1904,
+      "nature": 0.2146,
+      "group": 0.199,
+      "solo": 0.2132
+    }
+  },
+  {
+    "id": 20,
+    "file": "ppdt_0020.jpg",
+    "page": 20,
+    "width": 600,
+    "height": 452,
+    "category": "group",
+    "scores": {
+      "rural": 0.1923,
+      "urban": 0.213,
+      "military": 0.1956,
+      "nature": 0.1949,
+      "group": 0.2602,
+      "solo": 0.2078
+    }
+  },
+  {
+    "id": 21,
+    "file": "ppdt_0021.jpg",
+    "page": 21,
+    "width": 1024,
+    "height": 589,
+    "category": "group",
+    "scores": {
+      "rural": 0.2278,
+      "urban": 0.2161,
+      "military": 0.2161,
+      "nature": 0.1872,
+      "group": 0.2308,
+      "solo": 0.2231
+    }
+  },
+  {
+    "id": 22,
+    "file": "ppdt_0022.jpg",
+    "page": 22,
+    "width": 1024,
+    "height": 740,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2011,
+      "urban": 0.1812,
+      "military": 0.172,
+      "nature": 0.1755,
+      "group": 0.2115,
+      "solo": 0.2334
+    }
+  },
+  {
+    "id": 23,
+    "file": "ppdt_0023.jpg",
+    "page": 23,
+    "width": 320,
+    "height": 281,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2378,
+      "urban": 0.2032,
+      "military": 0.2122,
+      "nature": 0.2795,
+      "group": 0.2253,
+      "solo": 0.2367
+    }
+  },
+  {
+    "id": 24,
+    "file": "ppdt_0024.jpg",
+    "page": 24,
+    "width": 1024,
+    "height": 855,
+    "category": "group",
+    "scores": {
+      "rural": 0.1744,
+      "urban": 0.1796,
+      "military": 0.1819,
+      "nature": 0.1615,
+      "group": 0.2011,
+      "solo": 0.1903
+    }
+  },
+  {
+    "id": 25,
+    "file": "ppdt_0025.jpg",
+    "page": 25,
+    "width": 1148,
+    "height": 1280,
+    "category": "group",
+    "scores": {
+      "rural": 0.183,
+      "urban": 0.1858,
+      "military": 0.1792,
+      "nature": 0.1729,
+      "group": 0.2265,
+      "solo": 0.2259
+    }
+  },
+  {
+    "id": 26,
+    "file": "ppdt_0026.jpg",
+    "page": 26,
+    "width": 752,
+    "height": 564,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1693,
+      "urban": 0.211,
+      "military": 0.2008,
+      "nature": 0.1846,
+      "group": 0.2135,
+      "solo": 0.2244
+    }
+  },
+  {
+    "id": 27,
+    "file": "ppdt_0027.jpg",
+    "page": 27,
+    "width": 1024,
+    "height": 747,
+    "category": "solo",
+    "scores": {
+      "rural": 0.228,
+      "urban": 0.1638,
+      "military": 0.1828,
+      "nature": 0.2263,
+      "group": 0.1943,
+      "solo": 0.2288
+    }
+  },
+  {
+    "id": 28,
+    "file": "ppdt_0028.jpg",
+    "page": 28,
+    "width": 1280,
+    "height": 960,
+    "category": "group",
+    "scores": {
+      "rural": 0.2016,
+      "urban": 0.1667,
+      "military": 0.2051,
+      "nature": 0.2125,
+      "group": 0.2166,
+      "solo": 0.2056
+    }
+  },
+  {
+    "id": 29,
+    "file": "ppdt_0029.jpg",
+    "page": 29,
+    "width": 1280,
+    "height": 798,
+    "category": "group",
+    "scores": {
+      "rural": 0.1658,
+      "urban": 0.1924,
+      "military": 0.2207,
+      "nature": 0.1618,
+      "group": 0.2227,
+      "solo": 0.2023
+    }
+  },
+  {
+    "id": 30,
+    "file": "ppdt_0030.jpg",
+    "page": 30,
+    "width": 710,
+    "height": 466,
+    "category": "group",
+    "scores": {
+      "rural": 0.1932,
+      "urban": 0.1936,
+      "military": 0.2193,
+      "nature": 0.1961,
+      "group": 0.2631,
+      "solo": 0.219
+    }
+  },
+  {
+    "id": 31,
+    "file": "ppdt_0031.jpg",
+    "page": 31,
+    "width": 758,
+    "height": 566,
+    "category": "group",
+    "scores": {
+      "rural": 0.1762,
+      "urban": 0.2123,
+      "military": 0.1877,
+      "nature": 0.1798,
+      "group": 0.2289,
+      "solo": 0.2167
+    }
+  },
+  {
+    "id": 32,
+    "file": "ppdt_0032.jpg",
+    "page": 32,
+    "width": 834,
+    "height": 598,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1818,
+      "urban": 0.2275,
+      "military": 0.2201,
+      "nature": 0.2012,
+      "group": 0.2209,
+      "solo": 0.2271
+    }
+  },
+  {
+    "id": 33,
+    "file": "ppdt_0033.jpg",
+    "page": 33,
+    "width": 1280,
+    "height": 1111,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2102,
+      "urban": 0.1867,
+      "military": 0.1889,
+      "nature": 0.2303,
+      "group": 0.2137,
+      "solo": 0.2388
+    }
+  },
+  {
+    "id": 34,
+    "file": "ppdt_0034.jpg",
+    "page": 34,
+    "width": 736,
+    "height": 488,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2005,
+      "urban": 0.2142,
+      "military": 0.2208,
+      "nature": 0.2174,
+      "group": 0.2369,
+      "solo": 0.2426
+    }
+  },
+  {
+    "id": 35,
+    "file": "ppdt_0035.jpg",
+    "page": 35,
+    "width": 1051,
+    "height": 1280,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2345,
+      "urban": 0.1947,
+      "military": 0.2022,
+      "nature": 0.2155,
+      "group": 0.2172,
+      "solo": 0.2222
+    }
+  },
+  {
+    "id": 36,
+    "file": "ppdt_0036.jpg",
+    "page": 36,
+    "width": 906,
+    "height": 767,
+    "category": "group",
+    "scores": {
+      "rural": 0.1847,
+      "urban": 0.1878,
+      "military": 0.1802,
+      "nature": 0.175,
+      "group": 0.2323,
+      "solo": 0.2219
+    }
+  },
+  {
+    "id": 37,
+    "file": "ppdt_0037.jpg",
+    "page": 37,
+    "width": 750,
+    "height": 570,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2007,
+      "urban": 0.1685,
+      "military": 0.1797,
+      "nature": 0.2153,
+      "group": 0.1994,
+      "solo": 0.2225
+    }
+  },
+  {
+    "id": 38,
+    "file": "ppdt_0038.jpg",
+    "page": 38,
+    "width": 724,
+    "height": 532,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2428,
+      "urban": 0.2292,
+      "military": 0.2291,
+      "nature": 0.1963,
+      "group": 0.2424,
+      "solo": 0.2289
+    }
+  },
+  {
+    "id": 39,
+    "file": "ppdt_0039.jpg",
+    "page": 39,
+    "width": 694,
+    "height": 522,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1867,
+      "urban": 0.1964,
+      "military": 0.1805,
+      "nature": 0.1877,
+      "group": 0.1966,
+      "solo": 0.2327
+    }
+  },
+  {
+    "id": 40,
+    "file": "ppdt_0040.jpg",
+    "page": 40,
+    "width": 1280,
+    "height": 960,
+    "category": "military",
+    "scores": {
+      "rural": 0.1557,
+      "urban": 0.1697,
+      "military": 0.2464,
+      "nature": 0.1785,
+      "group": 0.1896,
+      "solo": 0.223
+    }
+  },
+  {
+    "id": 41,
+    "file": "ppdt_0041.jpg",
+    "page": 41,
+    "width": 1280,
+    "height": 960,
+    "category": "military",
+    "scores": {
+      "rural": 0.2086,
+      "urban": 0.1868,
+      "military": 0.2472,
+      "nature": 0.2275,
+      "group": 0.2092,
+      "solo": 0.228
+    }
+  },
+  {
+    "id": 42,
+    "file": "ppdt_0042.jpg",
+    "page": 42,
+    "width": 340,
+    "height": 408,
+    "category": "group",
+    "scores": {
+      "rural": 0.1183,
+      "urban": 0.1782,
+      "military": 0.1828,
+      "nature": 0.1581,
+      "group": 0.2159,
+      "solo": 0.2029
+    }
+  },
+  {
+    "id": 43,
+    "file": "ppdt_0043.jpg",
+    "page": 43,
+    "width": 1280,
+    "height": 640,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2172,
+      "urban": 0.175,
+      "military": 0.2068,
+      "nature": 0.2243,
+      "group": 0.2118,
+      "solo": 0.2133
+    }
+  },
+  {
+    "id": 44,
+    "file": "ppdt_0044.jpg",
+    "page": 44,
+    "width": 1280,
+    "height": 640,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2183,
+      "urban": 0.2327,
+      "military": 0.2308,
+      "nature": 0.1996,
+      "group": 0.2255,
+      "solo": 0.2219
+    }
+  },
+  {
+    "id": 45,
+    "file": "ppdt_0045.jpg",
+    "page": 45,
+    "width": 746,
+    "height": 566,
+    "category": "group",
+    "scores": {
+      "rural": 0.1644,
+      "urban": 0.1797,
+      "military": 0.1981,
+      "nature": 0.1736,
+      "group": 0.2137,
+      "solo": 0.2079
+    }
+  },
+  {
+    "id": 46,
+    "file": "ppdt_0046.jpg",
+    "page": 46,
+    "width": 698,
+    "height": 456,
+    "category": "military",
+    "scores": {
+      "rural": 0.1731,
+      "urban": 0.1658,
+      "military": 0.2269,
+      "nature": 0.21,
+      "group": 0.2219,
+      "solo": 0.208
+    }
+  },
+  {
+    "id": 47,
+    "file": "ppdt_0047.jpg",
+    "page": 47,
+    "width": 720,
+    "height": 402,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2277,
+      "urban": 0.1766,
+      "military": 0.1866,
+      "nature": 0.2172,
+      "group": 0.2043,
+      "solo": 0.2164
+    }
+  },
+  {
+    "id": 48,
+    "file": "ppdt_0048.jpg",
+    "page": 48,
+    "width": 600,
+    "height": 320,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2281,
+      "urban": 0.1862,
+      "military": 0.2165,
+      "nature": 0.2142,
+      "group": 0.196,
+      "solo": 0.2145
+    }
+  },
+  {
+    "id": 49,
+    "file": "ppdt_0049.jpg",
+    "page": 49,
+    "width": 1280,
+    "height": 851,
+    "category": "military",
+    "scores": {
+      "rural": 0.2008,
+      "urban": 0.1767,
+      "military": 0.2712,
+      "nature": 0.2164,
+      "group": 0.2033,
+      "solo": 0.2355
+    }
+  },
+  {
+    "id": 50,
+    "file": "ppdt_0050.jpg",
+    "page": 50,
+    "width": 468,
+    "height": 350,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2155,
+      "urban": 0.1847,
+      "military": 0.2192,
+      "nature": 0.1958,
+      "group": 0.2006,
+      "solo": 0.2204
+    }
+  },
+  {
+    "id": 51,
+    "file": "ppdt_0051.jpg",
+    "page": 51,
+    "width": 490,
+    "height": 374,
+    "category": "military",
+    "scores": {
+      "rural": 0.2402,
+      "urban": 0.2091,
+      "military": 0.2409,
+      "nature": 0.2371,
+      "group": 0.2224,
+      "solo": 0.2404
+    }
+  },
+  {
+    "id": 52,
+    "file": "ppdt_0052.jpg",
+    "page": 52,
+    "width": 488,
+    "height": 364,
+    "category": "group",
+    "scores": {
+      "rural": 0.2226,
+      "urban": 0.1924,
+      "military": 0.2119,
+      "nature": 0.2096,
+      "group": 0.2246,
+      "solo": 0.2132
+    }
+  },
+  {
+    "id": 53,
+    "file": "ppdt_0053.jpg",
+    "page": 53,
+    "width": 1024,
+    "height": 817,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2254,
+      "urban": 0.1879,
+      "military": 0.1795,
+      "nature": 0.2424,
+      "group": 0.2177,
+      "solo": 0.2076
+    }
+  },
+  {
+    "id": 54,
+    "file": "ppdt_0054.jpg",
+    "page": 54,
+    "width": 1280,
+    "height": 948,
+    "category": "military",
+    "scores": {
+      "rural": 0.1789,
+      "urban": 0.1588,
+      "military": 0.2471,
+      "nature": 0.1872,
+      "group": 0.189,
+      "solo": 0.2197
+    }
+  },
+  {
+    "id": 55,
+    "file": "ppdt_0055.jpg",
+    "page": 55,
+    "width": 960,
+    "height": 639,
+    "category": "group",
+    "scores": {
+      "rural": 0.1428,
+      "urban": 0.1779,
+      "military": 0.1718,
+      "nature": 0.1889,
+      "group": 0.2435,
+      "solo": 0.1876
+    }
+  },
+  {
+    "id": 56,
+    "file": "ppdt_0056.jpg",
+    "page": 56,
+    "width": 478,
+    "height": 358,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2193,
+      "urban": 0.1963,
+      "military": 0.1765,
+      "nature": 0.2257,
+      "group": 0.2162,
+      "solo": 0.2112
+    }
+  },
+  {
+    "id": 57,
+    "file": "ppdt_0057.jpg",
+    "page": 57,
+    "width": 1280,
+    "height": 960,
+    "category": "military",
+    "scores": {
+      "rural": 0.2117,
+      "urban": 0.19,
+      "military": 0.2444,
+      "nature": 0.2294,
+      "group": 0.2132,
+      "solo": 0.2322
+    }
+  },
+  {
+    "id": 58,
+    "file": "ppdt_0058.jpg",
+    "page": 58,
+    "width": 520,
+    "height": 412,
+    "category": "group",
+    "scores": {
+      "rural": 0.1971,
+      "urban": 0.2138,
+      "military": 0.1991,
+      "nature": 0.1799,
+      "group": 0.2367,
+      "solo": 0.2014
+    }
+  },
+  {
+    "id": 59,
+    "file": "ppdt_0059.jpg",
+    "page": 60,
+    "width": 1078,
+    "height": 533,
+    "category": "group",
+    "scores": {
+      "rural": 0.1689,
+      "urban": 0.186,
+      "military": 0.1845,
+      "nature": 0.1714,
+      "group": 0.2265,
+      "solo": 0.2165
+    }
+  },
+  {
+    "id": 60,
+    "file": "ppdt_0060.jpg",
+    "page": 61,
+    "width": 638,
+    "height": 479,
+    "category": "group",
+    "scores": {
+      "rural": 0.2133,
+      "urban": 0.1892,
+      "military": 0.2075,
+      "nature": 0.2176,
+      "group": 0.2371,
+      "solo": 0.235
+    }
+  },
+  {
+    "id": 61,
+    "file": "ppdt_0061.jpg",
+    "page": 62,
+    "width": 722,
+    "height": 603,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2357,
+      "urban": 0.2005,
+      "military": 0.233,
+      "nature": 0.2103,
+      "group": 0.2106,
+      "solo": 0.2229
+    }
+  },
+  {
+    "id": 62,
+    "file": "ppdt_0062.jpg",
+    "page": 64,
+    "width": 667,
+    "height": 349,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1701,
+      "urban": 0.1672,
+      "military": 0.1544,
+      "nature": 0.1631,
+      "group": 0.1895,
+      "solo": 0.1959
+    }
+  },
+  {
+    "id": 63,
+    "file": "ppdt_0063.jpg",
+    "page": 65,
+    "width": 828,
+    "height": 760,
+    "category": "group",
+    "scores": {
+      "rural": 0.2158,
+      "urban": 0.2025,
+      "military": 0.1924,
+      "nature": 0.1883,
+      "group": 0.2424,
+      "solo": 0.2098
+    }
+  },
+  {
+    "id": 64,
+    "file": "ppdt_0064.jpg",
+    "page": 66,
+    "width": 978,
+    "height": 1200,
+    "category": "group",
+    "scores": {
+      "rural": 0.1605,
+      "urban": 0.17,
+      "military": 0.1696,
+      "nature": 0.1668,
+      "group": 0.2095,
+      "solo": 0.1963
+    }
+  },
+  {
+    "id": 65,
+    "file": "ppdt_0065.jpg",
+    "page": 67,
+    "width": 1280,
+    "height": 794,
+    "category": "group",
+    "scores": {
+      "rural": 0.2218,
+      "urban": 0.2265,
+      "military": 0.204,
+      "nature": 0.1926,
+      "group": 0.2337,
+      "solo": 0.2188
+    }
+  },
+  {
+    "id": 66,
+    "file": "ppdt_0066.jpg",
+    "page": 68,
+    "width": 638,
+    "height": 479,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1613,
+      "urban": 0.1863,
+      "military": 0.186,
+      "nature": 0.1904,
+      "group": 0.2235,
+      "solo": 0.2235
+    }
+  },
+  {
+    "id": 67,
+    "file": "ppdt_0067.jpg",
+    "page": 69,
+    "width": 720,
+    "height": 546,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1846,
+      "urban": 0.1762,
+      "military": 0.159,
+      "nature": 0.1805,
+      "group": 0.2025,
+      "solo": 0.2382
+    }
+  },
+  {
+    "id": 68,
+    "file": "ppdt_0068.jpg",
+    "page": 70,
+    "width": 624,
+    "height": 491,
+    "category": "military",
+    "scores": {
+      "rural": 0.2308,
+      "urban": 0.1872,
+      "military": 0.2392,
+      "nature": 0.2104,
+      "group": 0.2066,
+      "solo": 0.1971
+    }
+  },
+  {
+    "id": 69,
+    "file": "ppdt_0069.jpg",
+    "page": 71,
+    "width": 1080,
+    "height": 1280,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2501,
+      "urban": 0.2093,
+      "military": 0.2126,
+      "nature": 0.2031,
+      "group": 0.224,
+      "solo": 0.2163
+    }
+  },
+  {
+    "id": 70,
+    "file": "ppdt_0070.jpg",
+    "page": 72,
+    "width": 1280,
+    "height": 967,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2307,
+      "urban": 0.1851,
+      "military": 0.213,
+      "nature": 0.2441,
+      "group": 0.2283,
+      "solo": 0.218
+    }
+  },
+  {
+    "id": 71,
+    "file": "ppdt_0071.jpg",
+    "page": 73,
+    "width": 1280,
+    "height": 824,
+    "category": "group",
+    "scores": {
+      "rural": 0.1327,
+      "urban": 0.1671,
+      "military": 0.1742,
+      "nature": 0.1557,
+      "group": 0.2025,
+      "solo": 0.197
+    }
+  },
+  {
+    "id": 72,
+    "file": "ppdt_0072.jpg",
+    "page": 75,
+    "width": 735,
+    "height": 491,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1766,
+      "urban": 0.1881,
+      "military": 0.1709,
+      "nature": 0.1785,
+      "group": 0.2165,
+      "solo": 0.2232
+    }
+  },
+  {
+    "id": 73,
+    "file": "ppdt_0073.jpg",
+    "page": 76,
+    "width": 1280,
+    "height": 1008,
+    "category": "group",
+    "scores": {
+      "rural": 0.1391,
+      "urban": 0.1809,
+      "military": 0.1738,
+      "nature": 0.1598,
+      "group": 0.2217,
+      "solo": 0.1944
+    }
+  },
+  {
+    "id": 74,
+    "file": "ppdt_0074.jpg",
+    "page": 77,
+    "width": 1280,
+    "height": 939,
+    "category": "group",
+    "scores": {
+      "rural": 0.2222,
+      "urban": 0.1926,
+      "military": 0.2196,
+      "nature": 0.2148,
+      "group": 0.2324,
+      "solo": 0.2262
+    }
+  },
+  {
+    "id": 75,
+    "file": "ppdt_0075.jpg",
+    "page": 79,
+    "width": 300,
+    "height": 269,
+    "category": "group",
+    "scores": {
+      "rural": 0.2016,
+      "urban": 0.1794,
+      "military": 0.1763,
+      "nature": 0.1915,
+      "group": 0.2252,
+      "solo": 0.2223
+    }
+  },
+  {
+    "id": 76,
+    "file": "ppdt_0076.jpg",
+    "page": 80,
+    "width": 706,
+    "height": 801,
+    "category": "group",
+    "scores": {
+      "rural": 0.1425,
+      "urban": 0.1707,
+      "military": 0.1692,
+      "nature": 0.1681,
+      "group": 0.2319,
+      "solo": 0.2279
+    }
+  },
+  {
+    "id": 77,
+    "file": "ppdt_0077.jpg",
+    "page": 81,
+    "width": 1280,
+    "height": 1043,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2417,
+      "urban": 0.1903,
+      "military": 0.1867,
+      "nature": 0.2425,
+      "group": 0.2369,
+      "solo": 0.2139
+    }
+  },
+  {
+    "id": 78,
+    "file": "ppdt_0078.jpg",
+    "page": 82,
+    "width": 1280,
+    "height": 1017,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2311,
+      "urban": 0.2477,
+      "military": 0.2225,
+      "nature": 0.2052,
+      "group": 0.2256,
+      "solo": 0.2139
+    }
+  },
+  {
+    "id": 79,
+    "file": "ppdt_0079.jpg",
+    "page": 83,
+    "width": 1140,
+    "height": 540,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1842,
+      "urban": 0.2222,
+      "military": 0.1822,
+      "nature": 0.1913,
+      "group": 0.2009,
+      "solo": 0.2247
+    }
+  },
+  {
+    "id": 80,
+    "file": "ppdt_0080.jpg",
+    "page": 84,
+    "width": 786,
+    "height": 612,
+    "category": "group",
+    "scores": {
+      "rural": 0.2008,
+      "urban": 0.2116,
+      "military": 0.2368,
+      "nature": 0.1902,
+      "group": 0.2539,
+      "solo": 0.2038
+    }
+  },
+  {
+    "id": 81,
+    "file": "ppdt_0081.jpg",
+    "page": 85,
+    "width": 1280,
+    "height": 798,
+    "category": "group",
+    "scores": {
+      "rural": 0.1668,
+      "urban": 0.1946,
+      "military": 0.2247,
+      "nature": 0.163,
+      "group": 0.2254,
+      "solo": 0.2036
+    }
+  },
+  {
+    "id": 82,
+    "file": "ppdt_0082.jpg",
+    "page": 86,
+    "width": 1280,
+    "height": 1076,
+    "category": "group",
+    "scores": {
+      "rural": 0.1818,
+      "urban": 0.2002,
+      "military": 0.1715,
+      "nature": 0.1911,
+      "group": 0.226,
+      "solo": 0.2059
+    }
+  },
+  {
+    "id": 83,
+    "file": "ppdt_0083.jpg",
+    "page": 87,
+    "width": 960,
+    "height": 654,
+    "category": "military",
+    "scores": {
+      "rural": 0.2468,
+      "urban": 0.2034,
+      "military": 0.2679,
+      "nature": 0.2215,
+      "group": 0.2376,
+      "solo": 0.2238
+    }
+  },
+  {
+    "id": 84,
+    "file": "ppdt_0084.jpg",
+    "page": 88,
+    "width": 690,
+    "height": 520,
+    "category": "group",
+    "scores": {
+      "rural": 0.1548,
+      "urban": 0.195,
+      "military": 0.184,
+      "nature": 0.1743,
+      "group": 0.222,
+      "solo": 0.1966
+    }
+  },
+  {
+    "id": 85,
+    "file": "ppdt_0085.jpg",
+    "page": 89,
+    "width": 360,
+    "height": 270,
+    "category": "group",
+    "scores": {
+      "rural": 0.1498,
+      "urban": 0.1966,
+      "military": 0.182,
+      "nature": 0.1883,
+      "group": 0.2329,
+      "solo": 0.2119
+    }
+  },
+  {
+    "id": 86,
+    "file": "ppdt_0086.jpg",
+    "page": 90,
+    "width": 717,
+    "height": 563,
+    "category": "rural",
+    "scores": {
+      "rural": 0.223,
+      "urban": 0.2101,
+      "military": 0.213,
+      "nature": 0.1877,
+      "group": 0.2093,
+      "solo": 0.2066
+    }
+  },
+  {
+    "id": 87,
+    "file": "ppdt_0087.jpg",
+    "page": 91,
+    "width": 479,
+    "height": 329,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1469,
+      "urban": 0.1786,
+      "military": 0.1912,
+      "nature": 0.175,
+      "group": 0.2226,
+      "solo": 0.2331
+    }
+  },
+  {
+    "id": 88,
+    "file": "ppdt_0088.jpg",
+    "page": 92,
+    "width": 1280,
+    "height": 838,
+    "category": "group",
+    "scores": {
+      "rural": 0.2201,
+      "urban": 0.1817,
+      "military": 0.2041,
+      "nature": 0.2324,
+      "group": 0.2356,
+      "solo": 0.2098
+    }
+  },
+  {
+    "id": 89,
+    "file": "ppdt_0089.jpg",
+    "page": 93,
+    "width": 1280,
+    "height": 960,
+    "category": "group",
+    "scores": {
+      "rural": 0.173,
+      "urban": 0.2034,
+      "military": 0.1705,
+      "nature": 0.1859,
+      "group": 0.2264,
+      "solo": 0.222
+    }
+  },
+  {
+    "id": 90,
+    "file": "ppdt_0090.jpg",
+    "page": 94,
+    "width": 1280,
+    "height": 794,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2154,
+      "urban": 0.1909,
+      "military": 0.1789,
+      "nature": 0.2146,
+      "group": 0.2025,
+      "solo": 0.2058
+    }
+  },
+  {
+    "id": 91,
+    "file": "ppdt_0091.jpg",
+    "page": 95,
+    "width": 1280,
+    "height": 939,
+    "category": "military",
+    "scores": {
+      "rural": 0.2287,
+      "urban": 0.184,
+      "military": 0.2358,
+      "nature": 0.209,
+      "group": 0.2132,
+      "solo": 0.2192
+    }
+  },
+  {
+    "id": 92,
+    "file": "ppdt_0092.jpg",
+    "page": 96,
+    "width": 1280,
+    "height": 855,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2058,
+      "urban": 0.1825,
+      "military": 0.1967,
+      "nature": 0.2239,
+      "group": 0.21,
+      "solo": 0.2219
+    }
+  },
+  {
+    "id": 93,
+    "file": "ppdt_0093.jpg",
+    "page": 97,
+    "width": 512,
+    "height": 384,
+    "category": "military",
+    "scores": {
+      "rural": 0.1849,
+      "urban": 0.2102,
+      "military": 0.2969,
+      "nature": 0.1951,
+      "group": 0.2275,
+      "solo": 0.2059
+    }
+  },
+  {
+    "id": 94,
+    "file": "ppdt_0094.jpg",
+    "page": 98,
+    "width": 1280,
+    "height": 673,
+    "category": "group",
+    "scores": {
+      "rural": 0.1849,
+      "urban": 0.2281,
+      "military": 0.1963,
+      "nature": 0.1954,
+      "group": 0.2388,
+      "solo": 0.2136
+    }
+  },
+  {
+    "id": 95,
+    "file": "ppdt_0095.jpg",
+    "page": 100,
+    "width": 720,
+    "height": 494,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2285,
+      "urban": 0.1988,
+      "military": 0.2217,
+      "nature": 0.2105,
+      "group": 0.2121,
+      "solo": 0.2262
+    }
+  },
+  {
+    "id": 96,
+    "file": "ppdt_0096.jpg",
+    "page": 101,
+    "width": 396,
+    "height": 474,
+    "category": "military",
+    "scores": {
+      "rural": 0.226,
+      "urban": 0.2078,
+      "military": 0.2426,
+      "nature": 0.2166,
+      "group": 0.2424,
+      "solo": 0.2226
+    }
+  },
+  {
+    "id": 97,
+    "file": "ppdt_0097.jpg",
+    "page": 102,
+    "width": 1280,
+    "height": 911,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2098,
+      "urban": 0.1776,
+      "military": 0.1799,
+      "nature": 0.2304,
+      "group": 0.1966,
+      "solo": 0.2316
+    }
+  },
+  {
+    "id": 98,
+    "file": "ppdt_0098.jpg",
+    "page": 103,
+    "width": 1280,
+    "height": 918,
+    "category": "group",
+    "scores": {
+      "rural": 0.2271,
+      "urban": 0.2082,
+      "military": 0.21,
+      "nature": 0.1927,
+      "group": 0.2353,
+      "solo": 0.2225
+    }
+  },
+  {
+    "id": 99,
+    "file": "ppdt_0099.jpg",
+    "page": 104,
+    "width": 1280,
+    "height": 686,
+    "category": "solo",
+    "scores": {
+      "rural": 0.18,
+      "urban": 0.1739,
+      "military": 0.1879,
+      "nature": 0.1782,
+      "group": 0.2022,
+      "solo": 0.2252
+    }
+  },
+  {
+    "id": 100,
+    "file": "ppdt_0100.jpg",
+    "page": 105,
+    "width": 1080,
+    "height": 838,
+    "category": "military",
+    "scores": {
+      "rural": 0.199,
+      "urban": 0.2024,
+      "military": 0.2379,
+      "nature": 0.1687,
+      "group": 0.219,
+      "solo": 0.2066
+    }
+  },
+  {
+    "id": 101,
+    "file": "ppdt_0101.jpg",
+    "page": 106,
+    "width": 800,
+    "height": 557,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2106,
+      "urban": 0.2419,
+      "military": 0.2078,
+      "nature": 0.2246,
+      "group": 0.2402,
+      "solo": 0.2269
+    }
+  },
+  {
+    "id": 102,
+    "file": "ppdt_0102.jpg",
+    "page": 107,
+    "width": 1080,
+    "height": 648,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1903,
+      "urban": 0.2048,
+      "military": 0.2152,
+      "nature": 0.2106,
+      "group": 0.2223,
+      "solo": 0.2295
+    }
+  },
+  {
+    "id": 103,
+    "file": "ppdt_0103.jpg",
+    "page": 108,
+    "width": 875,
+    "height": 640,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2256,
+      "urban": 0.1935,
+      "military": 0.2199,
+      "nature": 0.1969,
+      "group": 0.2056,
+      "solo": 0.2064
+    }
+  },
+  {
+    "id": 104,
+    "file": "ppdt_0104.jpg",
+    "page": 109,
+    "width": 1080,
+    "height": 1175,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2004,
+      "urban": 0.2046,
+      "military": 0.2017,
+      "nature": 0.1869,
+      "group": 0.2215,
+      "solo": 0.2307
+    }
+  },
+  {
+    "id": 105,
+    "file": "ppdt_0105.jpg",
+    "page": 110,
+    "width": 1280,
+    "height": 930,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2139,
+      "urban": 0.1979,
+      "military": 0.1915,
+      "nature": 0.1992,
+      "group": 0.1924,
+      "solo": 0.2328
+    }
+  },
+  {
+    "id": 106,
+    "file": "ppdt_0106.jpg",
+    "page": 111,
+    "width": 719,
+    "height": 475,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2145,
+      "urban": 0.1813,
+      "military": 0.2013,
+      "nature": 0.214,
+      "group": 0.2131,
+      "solo": 0.2196
+    }
+  },
+  {
+    "id": 107,
+    "file": "ppdt_0107.jpg",
+    "page": 112,
+    "width": 1080,
+    "height": 643,
+    "category": "solo",
+    "scores": {
+      "rural": 0.236,
+      "urban": 0.1968,
+      "military": 0.2239,
+      "nature": 0.2284,
+      "group": 0.2219,
+      "solo": 0.2474
+    }
+  },
+  {
+    "id": 108,
+    "file": "ppdt_0108.jpg",
+    "page": 113,
+    "width": 260,
+    "height": 319,
+    "category": "group",
+    "scores": {
+      "rural": 0.09,
+      "urban": 0.1647,
+      "military": 0.1621,
+      "nature": 0.1607,
+      "group": 0.2054,
+      "solo": 0.1842
+    }
+  },
+  {
+    "id": 109,
+    "file": "ppdt_0109.jpg",
+    "page": 114,
+    "width": 600,
+    "height": 320,
+    "category": "military",
+    "scores": {
+      "rural": 0.1958,
+      "urban": 0.1954,
+      "military": 0.2436,
+      "nature": 0.1982,
+      "group": 0.2101,
+      "solo": 0.2248
+    }
+  },
+  {
+    "id": 110,
+    "file": "ppdt_0110.jpg",
+    "page": 115,
+    "width": 720,
+    "height": 458,
+    "category": "group",
+    "scores": {
+      "rural": 0.2068,
+      "urban": 0.1906,
+      "military": 0.1934,
+      "nature": 0.1965,
+      "group": 0.2324,
+      "solo": 0.1981
+    }
+  },
+  {
+    "id": 111,
+    "file": "ppdt_0111.jpg",
+    "page": 116,
+    "width": 733,
+    "height": 540,
+    "category": "group",
+    "scores": {
+      "rural": 0.2014,
+      "urban": 0.2145,
+      "military": 0.218,
+      "nature": 0.1902,
+      "group": 0.24,
+      "solo": 0.2316
+    }
+  },
+  {
+    "id": 112,
+    "file": "ppdt_0112.jpg",
+    "page": 117,
+    "width": 720,
+    "height": 1280,
+    "category": "group",
+    "scores": {
+      "rural": 0.214,
+      "urban": 0.2106,
+      "military": 0.2113,
+      "nature": 0.1999,
+      "group": 0.2299,
+      "solo": 0.2197
+    }
+  },
+  {
+    "id": 113,
+    "file": "ppdt_0113.jpg",
+    "page": 118,
+    "width": 1080,
+    "height": 857,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2428,
+      "urban": 0.2049,
+      "military": 0.2115,
+      "nature": 0.2242,
+      "group": 0.2357,
+      "solo": 0.2242
+    }
+  },
+  {
+    "id": 114,
+    "file": "ppdt_0114.jpg",
+    "page": 119,
+    "width": 636,
+    "height": 482,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2348,
+      "urban": 0.2085,
+      "military": 0.1995,
+      "nature": 0.1936,
+      "group": 0.1996,
+      "solo": 0.2276
+    }
+  },
+  {
+    "id": 115,
+    "file": "ppdt_0115.jpg",
+    "page": 120,
+    "width": 720,
+    "height": 489,
+    "category": "group",
+    "scores": {
+      "rural": 0.2004,
+      "urban": 0.2033,
+      "military": 0.1851,
+      "nature": 0.1932,
+      "group": 0.2294,
+      "solo": 0.225
+    }
+  },
+  {
+    "id": 116,
+    "file": "ppdt_0116.jpg",
+    "page": 121,
+    "width": 434,
+    "height": 335,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2025,
+      "urban": 0.1651,
+      "military": 0.1926,
+      "nature": 0.2262,
+      "group": 0.2028,
+      "solo": 0.2122
+    }
+  },
+  {
+    "id": 117,
+    "file": "ppdt_0117.jpg",
+    "page": 122,
+    "width": 594,
+    "height": 325,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2114,
+      "urban": 0.1783,
+      "military": 0.1919,
+      "nature": 0.2567,
+      "group": 0.2258,
+      "solo": 0.2226
+    }
+  },
+  {
+    "id": 118,
+    "file": "ppdt_0118.jpg",
+    "page": 123,
+    "width": 1080,
+    "height": 777,
+    "category": "group",
+    "scores": {
+      "rural": 0.1903,
+      "urban": 0.1927,
+      "military": 0.2166,
+      "nature": 0.1936,
+      "group": 0.2698,
+      "solo": 0.2029
+    }
+  },
+  {
+    "id": 119,
+    "file": "ppdt_0119.jpg",
+    "page": 124,
+    "width": 1127,
+    "height": 917,
+    "category": "military",
+    "scores": {
+      "rural": 0.2106,
+      "urban": 0.1598,
+      "military": 0.2522,
+      "nature": 0.2049,
+      "group": 0.2038,
+      "solo": 0.2159
+    }
+  },
+  {
+    "id": 120,
+    "file": "ppdt_0120.jpg",
+    "page": 125,
+    "width": 400,
+    "height": 293,
+    "category": "group",
+    "scores": {
+      "rural": 0.1631,
+      "urban": 0.196,
+      "military": 0.1779,
+      "nature": 0.1733,
+      "group": 0.2457,
+      "solo": 0.1978
+    }
+  },
+  {
+    "id": 121,
+    "file": "ppdt_0121.jpg",
+    "page": 126,
+    "width": 1079,
+    "height": 871,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2379,
+      "urban": 0.2002,
+      "military": 0.1972,
+      "nature": 0.2017,
+      "group": 0.2163,
+      "solo": 0.2187
+    }
+  },
+  {
+    "id": 122,
+    "file": "ppdt_0122.jpg",
+    "page": 127,
+    "width": 1030,
+    "height": 843,
+    "category": "group",
+    "scores": {
+      "rural": 0.1753,
+      "urban": 0.199,
+      "military": 0.1869,
+      "nature": 0.2054,
+      "group": 0.2222,
+      "solo": 0.214
+    }
+  },
+  {
+    "id": 123,
+    "file": "ppdt_0123.jpg",
+    "page": 128,
+    "width": 709,
+    "height": 513,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2377,
+      "urban": 0.1896,
+      "military": 0.2381,
+      "nature": 0.2322,
+      "group": 0.222,
+      "solo": 0.239
+    }
+  },
+  {
+    "id": 124,
+    "file": "ppdt_0124.jpg",
+    "page": 129,
+    "width": 713,
+    "height": 606,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2285,
+      "urban": 0.169,
+      "military": 0.1914,
+      "nature": 0.2171,
+      "group": 0.1897,
+      "solo": 0.2181
+    }
+  },
+  {
+    "id": 125,
+    "file": "ppdt_0125.jpg",
+    "page": 130,
+    "width": 1080,
+    "height": 698,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2276,
+      "urban": 0.2029,
+      "military": 0.1966,
+      "nature": 0.1908,
+      "group": 0.219,
+      "solo": 0.2396
+    }
+  },
+  {
+    "id": 126,
+    "file": "ppdt_0126.jpg",
+    "page": 131,
+    "width": 1054,
+    "height": 730,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1978,
+      "urban": 0.2226,
+      "military": 0.205,
+      "nature": 0.1895,
+      "group": 0.2195,
+      "solo": 0.2151
+    }
+  },
+  {
+    "id": 127,
+    "file": "ppdt_0127.jpg",
+    "page": 132,
+    "width": 646,
+    "height": 541,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2246,
+      "urban": 0.2118,
+      "military": 0.217,
+      "nature": 0.2061,
+      "group": 0.2147,
+      "solo": 0.2026
+    }
+  },
+  {
+    "id": 128,
+    "file": "ppdt_0128.jpg",
+    "page": 133,
+    "width": 1280,
+    "height": 918,
+    "category": "group",
+    "scores": {
+      "rural": 0.1737,
+      "urban": 0.1873,
+      "military": 0.179,
+      "nature": 0.1744,
+      "group": 0.2606,
+      "solo": 0.2051
+    }
+  },
+  {
+    "id": 129,
+    "file": "ppdt_0129.jpg",
+    "page": 134,
+    "width": 1280,
+    "height": 894,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2236,
+      "urban": 0.1824,
+      "military": 0.2157,
+      "nature": 0.2221,
+      "group": 0.2232,
+      "solo": 0.2135
+    }
+  },
+  {
+    "id": 130,
+    "file": "ppdt_0130.jpg",
+    "page": 135,
+    "width": 1078,
+    "height": 816,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2401,
+      "urban": 0.1992,
+      "military": 0.2251,
+      "nature": 0.2308,
+      "group": 0.2135,
+      "solo": 0.2347
+    }
+  },
+  {
+    "id": 131,
+    "file": "ppdt_0131.jpg",
+    "page": 136,
+    "width": 653,
+    "height": 605,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1921,
+      "urban": 0.184,
+      "military": 0.1976,
+      "nature": 0.18,
+      "group": 0.199,
+      "solo": 0.2239
+    }
+  },
+  {
+    "id": 132,
+    "file": "ppdt_0132.jpg",
+    "page": 137,
+    "width": 1280,
+    "height": 1094,
+    "category": "group",
+    "scores": {
+      "rural": 0.1967,
+      "urban": 0.1867,
+      "military": 0.2026,
+      "nature": 0.1705,
+      "group": 0.2044,
+      "solo": 0.1937
+    }
+  },
+  {
+    "id": 133,
+    "file": "ppdt_0133.jpg",
+    "page": 138,
+    "width": 1080,
+    "height": 785,
+    "category": "group",
+    "scores": {
+      "rural": 0.2159,
+      "urban": 0.2106,
+      "military": 0.2097,
+      "nature": 0.19,
+      "group": 0.2412,
+      "solo": 0.2093
+    }
+  },
+  {
+    "id": 134,
+    "file": "ppdt_0134.jpg",
+    "page": 139,
+    "width": 1028,
+    "height": 720,
+    "category": "solo",
+    "scores": {
+      "rural": 0.221,
+      "urban": 0.2104,
+      "military": 0.2131,
+      "nature": 0.2116,
+      "group": 0.2209,
+      "solo": 0.2329
+    }
+  },
+  {
+    "id": 135,
+    "file": "ppdt_0135.jpg",
+    "page": 140,
+    "width": 1280,
+    "height": 720,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1642,
+      "urban": 0.1885,
+      "military": 0.2061,
+      "nature": 0.1799,
+      "group": 0.2255,
+      "solo": 0.2338
+    }
+  },
+  {
+    "id": 136,
+    "file": "ppdt_0136.jpg",
+    "page": 141,
+    "width": 887,
+    "height": 710,
+    "category": "group",
+    "scores": {
+      "rural": 0.2073,
+      "urban": 0.1958,
+      "military": 0.2172,
+      "nature": 0.2019,
+      "group": 0.2682,
+      "solo": 0.2388
+    }
+  },
+  {
+    "id": 137,
+    "file": "ppdt_0137.jpg",
+    "page": 142,
+    "width": 599,
+    "height": 413,
+    "category": "group",
+    "scores": {
+      "rural": 0.1878,
+      "urban": 0.1939,
+      "military": 0.2038,
+      "nature": 0.1681,
+      "group": 0.2224,
+      "solo": 0.1974
+    }
+  },
+  {
+    "id": 138,
+    "file": "ppdt_0138.jpg",
+    "page": 143,
+    "width": 576,
+    "height": 1280,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2141,
+      "urban": 0.1772,
+      "military": 0.1667,
+      "nature": 0.2223,
+      "group": 0.194,
+      "solo": 0.2225
+    }
+  },
+  {
+    "id": 139,
+    "file": "ppdt_0139.jpg",
+    "page": 144,
+    "width": 1080,
+    "height": 725,
+    "category": "group",
+    "scores": {
+      "rural": 0.1991,
+      "urban": 0.1863,
+      "military": 0.1806,
+      "nature": 0.1832,
+      "group": 0.2251,
+      "solo": 0.2154
+    }
+  },
+  {
+    "id": 140,
+    "file": "ppdt_0140.jpg",
+    "page": 145,
+    "width": 1078,
+    "height": 816,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2092,
+      "urban": 0.1869,
+      "military": 0.1705,
+      "nature": 0.2176,
+      "group": 0.202,
+      "solo": 0.2301
+    }
+  },
+  {
+    "id": 141,
+    "file": "ppdt_0141.jpg",
+    "page": 146,
+    "width": 1080,
+    "height": 1082,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2206,
+      "urban": 0.1805,
+      "military": 0.194,
+      "nature": 0.2027,
+      "group": 0.1891,
+      "solo": 0.2001
+    }
+  },
+  {
+    "id": 142,
+    "file": "ppdt_0142.jpg",
+    "page": 147,
+    "width": 1080,
+    "height": 698,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2282,
+      "urban": 0.1996,
+      "military": 0.195,
+      "nature": 0.1909,
+      "group": 0.2175,
+      "solo": 0.24
+    }
+  },
+  {
+    "id": 143,
+    "file": "ppdt_0143.jpg",
+    "page": 148,
+    "width": 720,
+    "height": 482,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1752,
+      "urban": 0.2098,
+      "military": 0.1744,
+      "nature": 0.1775,
+      "group": 0.2082,
+      "solo": 0.2228
+    }
+  },
+  {
+    "id": 144,
+    "file": "ppdt_0144.jpg",
+    "page": 150,
+    "width": 1024,
+    "height": 795,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1478,
+      "urban": 0.2111,
+      "military": 0.1816,
+      "nature": 0.1766,
+      "group": 0.2081,
+      "solo": 0.218
+    }
+  },
+  {
+    "id": 145,
+    "file": "ppdt_0145.jpg",
+    "page": 151,
+    "width": 1280,
+    "height": 960,
+    "category": "group",
+    "scores": {
+      "rural": 0.2004,
+      "urban": 0.199,
+      "military": 0.1921,
+      "nature": 0.2047,
+      "group": 0.2217,
+      "solo": 0.2199
+    }
+  },
+  {
+    "id": 146,
+    "file": "ppdt_0146.jpg",
+    "page": 152,
+    "width": 1080,
+    "height": 857,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2408,
+      "urban": 0.2005,
+      "military": 0.2079,
+      "nature": 0.222,
+      "group": 0.2332,
+      "solo": 0.2212
+    }
+  },
+  {
+    "id": 147,
+    "file": "ppdt_0147.jpg",
+    "page": 153,
+    "width": 706,
+    "height": 801,
+    "category": "group",
+    "scores": {
+      "rural": 0.1443,
+      "urban": 0.1715,
+      "military": 0.1713,
+      "nature": 0.1671,
+      "group": 0.2323,
+      "solo": 0.2275
+    }
+  },
+  {
+    "id": 148,
+    "file": "ppdt_0148.jpg",
+    "page": 154,
+    "width": 1280,
+    "height": 925,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1806,
+      "urban": 0.2342,
+      "military": 0.2025,
+      "nature": 0.1809,
+      "group": 0.2114,
+      "solo": 0.2214
+    }
+  },
+  {
+    "id": 149,
+    "file": "ppdt_0149.jpg",
+    "page": 155,
+    "width": 1140,
+    "height": 540,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1856,
+      "urban": 0.2228,
+      "military": 0.183,
+      "nature": 0.1906,
+      "group": 0.2011,
+      "solo": 0.2245
+    }
+  },
+  {
+    "id": 150,
+    "file": "ppdt_0150.jpg",
+    "page": 156,
+    "width": 1280,
+    "height": 849,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2005,
+      "urban": 0.2179,
+      "military": 0.1957,
+      "nature": 0.1874,
+      "group": 0.2082,
+      "solo": 0.2136
+    }
+  },
+  {
+    "id": 151,
+    "file": "ppdt_0151.jpg",
+    "page": 157,
+    "width": 720,
+    "height": 421,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2115,
+      "urban": 0.183,
+      "military": 0.1897,
+      "nature": 0.2235,
+      "group": 0.207,
+      "solo": 0.2192
+    }
+  },
+  {
+    "id": 152,
+    "file": "ppdt_0152.jpg",
+    "page": 158,
+    "width": 1228,
+    "height": 1080,
+    "category": "group",
+    "scores": {
+      "rural": 0.1798,
+      "urban": 0.1933,
+      "military": 0.2004,
+      "nature": 0.1716,
+      "group": 0.2436,
+      "solo": 0.2188
+    }
+  },
+  {
+    "id": 153,
+    "file": "ppdt_0153.jpg",
+    "page": 159,
+    "width": 1280,
+    "height": 720,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2256,
+      "urban": 0.1948,
+      "military": 0.1957,
+      "nature": 0.2146,
+      "group": 0.211,
+      "solo": 0.2162
+    }
+  },
+  {
+    "id": 154,
+    "file": "ppdt_0154.jpg",
+    "page": 160,
+    "width": 1280,
+    "height": 995,
+    "category": "group",
+    "scores": {
+      "rural": 0.1686,
+      "urban": 0.2047,
+      "military": 0.1846,
+      "nature": 0.1981,
+      "group": 0.2698,
+      "solo": 0.2219
+    }
+  },
+  {
+    "id": 155,
+    "file": "ppdt_0155.jpg",
+    "page": 161,
+    "width": 712,
+    "height": 618,
+    "category": "group",
+    "scores": {
+      "rural": 0.2014,
+      "urban": 0.2004,
+      "military": 0.2232,
+      "nature": 0.2008,
+      "group": 0.2376,
+      "solo": 0.2256
+    }
+  },
+  {
+    "id": 156,
+    "file": "ppdt_0156.jpg",
+    "page": 162,
+    "width": 1280,
+    "height": 940,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2246,
+      "urban": 0.2211,
+      "military": 0.2044,
+      "nature": 0.213,
+      "group": 0.2196,
+      "solo": 0.2227
+    }
+  },
+  {
+    "id": 157,
+    "file": "ppdt_0157.jpg",
+    "page": 163,
+    "width": 1056,
+    "height": 792,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1946,
+      "urban": 0.2324,
+      "military": 0.2162,
+      "nature": 0.1874,
+      "group": 0.2273,
+      "solo": 0.2184
+    }
+  },
+  {
+    "id": 158,
+    "file": "ppdt_0158.jpg",
+    "page": 164,
+    "width": 811,
+    "height": 1080,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2184,
+      "urban": 0.1967,
+      "military": 0.2026,
+      "nature": 0.2259,
+      "group": 0.2109,
+      "solo": 0.2343
+    }
+  },
+  {
+    "id": 159,
+    "file": "ppdt_0159.jpg",
+    "page": 165,
+    "width": 1280,
+    "height": 969,
+    "category": "group",
+    "scores": {
+      "rural": 0.1719,
+      "urban": 0.1869,
+      "military": 0.171,
+      "nature": 0.1685,
+      "group": 0.2157,
+      "solo": 0.1851
+    }
+  },
+  {
+    "id": 160,
+    "file": "ppdt_0160.jpg",
+    "page": 166,
+    "width": 600,
+    "height": 450,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2229,
+      "urban": 0.1992,
+      "military": 0.1954,
+      "nature": 0.2147,
+      "group": 0.2039,
+      "solo": 0.2229
+    }
+  },
+  {
+    "id": 161,
+    "file": "ppdt_0161.jpg",
+    "page": 167,
+    "width": 1280,
+    "height": 988,
+    "category": "group",
+    "scores": {
+      "rural": 0.228,
+      "urban": 0.2005,
+      "military": 0.1985,
+      "nature": 0.2119,
+      "group": 0.2466,
+      "solo": 0.2328
+    }
+  },
+  {
+    "id": 162,
+    "file": "ppdt_0162.jpg",
+    "page": 168,
+    "width": 851,
+    "height": 647,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2323,
+      "urban": 0.2001,
+      "military": 0.2112,
+      "nature": 0.2228,
+      "group": 0.2099,
+      "solo": 0.2381
+    }
+  },
+  {
+    "id": 163,
+    "file": "ppdt_0163.jpg",
+    "page": 169,
+    "width": 1080,
+    "height": 805,
+    "category": "military",
+    "scores": {
+      "rural": 0.2302,
+      "urban": 0.2019,
+      "military": 0.2341,
+      "nature": 0.2268,
+      "group": 0.2218,
+      "solo": 0.2206
+    }
+  },
+  {
+    "id": 164,
+    "file": "ppdt_0164.jpg",
+    "page": 170,
+    "width": 1076,
+    "height": 954,
+    "category": "group",
+    "scores": {
+      "rural": 0.1793,
+      "urban": 0.1997,
+      "military": 0.1841,
+      "nature": 0.1975,
+      "group": 0.2574,
+      "solo": 0.216
+    }
+  },
+  {
+    "id": 165,
+    "file": "ppdt_0165.jpg",
+    "page": 171,
+    "width": 748,
+    "height": 581,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2129,
+      "urban": 0.1977,
+      "military": 0.214,
+      "nature": 0.2029,
+      "group": 0.2014,
+      "solo": 0.219
+    }
+  },
+  {
+    "id": 166,
+    "file": "ppdt_0166.jpg",
+    "page": 172,
+    "width": 1280,
+    "height": 948,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2125,
+      "urban": 0.1865,
+      "military": 0.1887,
+      "nature": 0.2067,
+      "group": 0.2128,
+      "solo": 0.2318
+    }
+  },
+  {
+    "id": 167,
+    "file": "ppdt_0167.jpg",
+    "page": 174,
+    "width": 1080,
+    "height": 1054,
+    "category": "group",
+    "scores": {
+      "rural": 0.1599,
+      "urban": 0.2076,
+      "military": 0.1976,
+      "nature": 0.1737,
+      "group": 0.2359,
+      "solo": 0.2234
+    }
+  },
+  {
+    "id": 168,
+    "file": "ppdt_0168.jpg",
+    "page": 175,
+    "width": 1000,
+    "height": 657,
+    "category": "military",
+    "scores": {
+      "rural": 0.2318,
+      "urban": 0.1958,
+      "military": 0.2422,
+      "nature": 0.2277,
+      "group": 0.2304,
+      "solo": 0.2304
+    }
+  },
+  {
+    "id": 169,
+    "file": "ppdt_0169.jpg",
+    "page": 177,
+    "width": 1080,
+    "height": 700,
+    "category": "group",
+    "scores": {
+      "rural": 0.2018,
+      "urban": 0.1832,
+      "military": 0.1888,
+      "nature": 0.1979,
+      "group": 0.2438,
+      "solo": 0.2096
+    }
+  },
+  {
+    "id": 170,
+    "file": "ppdt_0170.jpg",
+    "page": 178,
+    "width": 1080,
+    "height": 827,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1964,
+      "urban": 0.1977,
+      "military": 0.1751,
+      "nature": 0.1953,
+      "group": 0.2056,
+      "solo": 0.2283
+    }
+  },
+  {
+    "id": 171,
+    "file": "ppdt_0171.jpg",
+    "page": 179,
+    "width": 954,
+    "height": 720,
+    "category": "group",
+    "scores": {
+      "rural": 0.2183,
+      "urban": 0.187,
+      "military": 0.2113,
+      "nature": 0.2189,
+      "group": 0.2422,
+      "solo": 0.2182
+    }
+  },
+  {
+    "id": 172,
+    "file": "ppdt_0172.jpg",
+    "page": 180,
+    "width": 1080,
+    "height": 762,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2141,
+      "urban": 0.1908,
+      "military": 0.182,
+      "nature": 0.1905,
+      "group": 0.2197,
+      "solo": 0.241
+    }
+  },
+  {
+    "id": 173,
+    "file": "ppdt_0173.jpg",
+    "page": 181,
+    "width": 640,
+    "height": 487,
+    "category": "group",
+    "scores": {
+      "rural": 0.2441,
+      "urban": 0.197,
+      "military": 0.2351,
+      "nature": 0.2093,
+      "group": 0.2533,
+      "solo": 0.2255
+    }
+  },
+  {
+    "id": 174,
+    "file": "ppdt_0174.jpg",
+    "page": 182,
+    "width": 1080,
+    "height": 723,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2591,
+      "urban": 0.1811,
+      "military": 0.1647,
+      "nature": 0.2035,
+      "group": 0.2063,
+      "solo": 0.2173
+    }
+  },
+  {
+    "id": 175,
+    "file": "ppdt_0175.jpg",
+    "page": 183,
+    "width": 1280,
+    "height": 1022,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2042,
+      "urban": 0.2138,
+      "military": 0.1994,
+      "nature": 0.1874,
+      "group": 0.2102,
+      "solo": 0.2261
+    }
+  },
+  {
+    "id": 176,
+    "file": "ppdt_0176.jpg",
+    "page": 184,
+    "width": 1280,
+    "height": 976,
+    "category": "military",
+    "scores": {
+      "rural": 0.2117,
+      "urban": 0.1775,
+      "military": 0.2374,
+      "nature": 0.2124,
+      "group": 0.2227,
+      "solo": 0.2179
+    }
+  },
+  {
+    "id": 177,
+    "file": "ppdt_0177.jpg",
+    "page": 185,
+    "width": 570,
+    "height": 312,
+    "category": "group",
+    "scores": {
+      "rural": 0.2013,
+      "urban": 0.2051,
+      "military": 0.2042,
+      "nature": 0.1971,
+      "group": 0.2081,
+      "solo": 0.204
+    }
+  },
+  {
+    "id": 178,
+    "file": "ppdt_0178.jpg",
+    "page": 186,
+    "width": 1280,
+    "height": 583,
+    "category": "military",
+    "scores": {
+      "rural": 0.178,
+      "urban": 0.1625,
+      "military": 0.2276,
+      "nature": 0.2214,
+      "group": 0.2122,
+      "solo": 0.2081
+    }
+  },
+  {
+    "id": 179,
+    "file": "ppdt_0179.jpg",
+    "page": 187,
+    "width": 1280,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2362,
+      "urban": 0.2107,
+      "military": 0.2282,
+      "nature": 0.1958,
+      "group": 0.2339,
+      "solo": 0.2136
+    }
+  },
+  {
+    "id": 180,
+    "file": "ppdt_0180.jpg",
+    "page": 188,
+    "width": 1280,
+    "height": 960,
+    "category": "military",
+    "scores": {
+      "rural": 0.1975,
+      "urban": 0.1911,
+      "military": 0.2509,
+      "nature": 0.1966,
+      "group": 0.227,
+      "solo": 0.2145
+    }
+  },
+  {
+    "id": 181,
+    "file": "ppdt_0181.jpg",
+    "page": 189,
+    "width": 1280,
+    "height": 855,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2235,
+      "urban": 0.1905,
+      "military": 0.2054,
+      "nature": 0.1935,
+      "group": 0.2167,
+      "solo": 0.1943
+    }
+  },
+  {
+    "id": 182,
+    "file": "ppdt_0182.jpg",
+    "page": 190,
+    "width": 1080,
+    "height": 767,
+    "category": "group",
+    "scores": {
+      "rural": 0.1819,
+      "urban": 0.1835,
+      "military": 0.1926,
+      "nature": 0.1851,
+      "group": 0.2264,
+      "solo": 0.2088
+    }
+  },
+  {
+    "id": 183,
+    "file": "ppdt_0183.jpg",
+    "page": 191,
+    "width": 471,
+    "height": 337,
+    "category": "group",
+    "scores": {
+      "rural": 0.1926,
+      "urban": 0.1773,
+      "military": 0.2182,
+      "nature": 0.195,
+      "group": 0.2319,
+      "solo": 0.2283
+    }
+  },
+  {
+    "id": 184,
+    "file": "ppdt_0184.jpg",
+    "page": 192,
+    "width": 771,
+    "height": 494,
+    "category": "group",
+    "scores": {
+      "rural": 0.1937,
+      "urban": 0.1855,
+      "military": 0.2142,
+      "nature": 0.1728,
+      "group": 0.2442,
+      "solo": 0.2245
+    }
+  },
+  {
+    "id": 185,
+    "file": "ppdt_0185.jpg",
+    "page": 193,
+    "width": 771,
+    "height": 543,
+    "category": "military",
+    "scores": {
+      "rural": 0.22,
+      "urban": 0.2135,
+      "military": 0.2428,
+      "nature": 0.1922,
+      "group": 0.2215,
+      "solo": 0.2155
+    }
+  },
+  {
+    "id": 186,
+    "file": "ppdt_0186.jpg",
+    "page": 195,
+    "width": 1280,
+    "height": 864,
+    "category": "military",
+    "scores": {
+      "rural": 0.1676,
+      "urban": 0.1684,
+      "military": 0.248,
+      "nature": 0.2101,
+      "group": 0.2193,
+      "solo": 0.2011
+    }
+  },
+  {
+    "id": 187,
+    "file": "ppdt_0187.jpg",
+    "page": 196,
+    "width": 1080,
+    "height": 754,
+    "category": "group",
+    "scores": {
+      "rural": 0.1969,
+      "urban": 0.1982,
+      "military": 0.1781,
+      "nature": 0.1755,
+      "group": 0.2429,
+      "solo": 0.2029
+    }
+  },
+  {
+    "id": 188,
+    "file": "ppdt_0188.jpg",
+    "page": 197,
+    "width": 1080,
+    "height": 859,
+    "category": "group",
+    "scores": {
+      "rural": 0.1725,
+      "urban": 0.1898,
+      "military": 0.1951,
+      "nature": 0.1796,
+      "group": 0.2573,
+      "solo": 0.2079
+    }
+  },
+  {
+    "id": 189,
+    "file": "ppdt_0189.jpg",
+    "page": 198,
+    "width": 462,
+    "height": 558,
+    "category": "group",
+    "scores": {
+      "rural": 0.148,
+      "urban": 0.1693,
+      "military": 0.1705,
+      "nature": 0.1466,
+      "group": 0.2034,
+      "solo": 0.1854
+    }
+  },
+  {
+    "id": 190,
+    "file": "ppdt_0190.jpg",
+    "page": 199,
+    "width": 1080,
+    "height": 721,
+    "category": "group",
+    "scores": {
+      "rural": 0.135,
+      "urban": 0.1753,
+      "military": 0.1799,
+      "nature": 0.1478,
+      "group": 0.225,
+      "solo": 0.1797
+    }
+  },
+  {
+    "id": 191,
+    "file": "ppdt_0191.jpg",
+    "page": 200,
+    "width": 771,
+    "height": 571,
+    "category": "group",
+    "scores": {
+      "rural": 0.2192,
+      "urban": 0.1953,
+      "military": 0.2073,
+      "nature": 0.2096,
+      "group": 0.2487,
+      "solo": 0.2142
+    }
+  },
+  {
+    "id": 192,
+    "file": "ppdt_0192.jpg",
+    "page": 201,
+    "width": 771,
+    "height": 717,
+    "category": "group",
+    "scores": {
+      "rural": 0.1791,
+      "urban": 0.1686,
+      "military": 0.2028,
+      "nature": 0.1922,
+      "group": 0.2453,
+      "solo": 0.2387
+    }
+  },
+  {
+    "id": 193,
+    "file": "ppdt_0193.jpg",
+    "page": 202,
+    "width": 720,
+    "height": 413,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1775,
+      "urban": 0.191,
+      "military": 0.1907,
+      "nature": 0.1907,
+      "group": 0.2369,
+      "solo": 0.247
+    }
+  },
+  {
+    "id": 194,
+    "file": "ppdt_0194.jpg",
+    "page": 203,
+    "width": 771,
+    "height": 417,
+    "category": "group",
+    "scores": {
+      "rural": 0.1933,
+      "urban": 0.1872,
+      "military": 0.1908,
+      "nature": 0.191,
+      "group": 0.2427,
+      "solo": 0.2268
+    }
+  },
+  {
+    "id": 195,
+    "file": "ppdt_0195.jpg",
+    "page": 204,
+    "width": 1280,
+    "height": 1098,
+    "category": "group",
+    "scores": {
+      "rural": 0.1602,
+      "urban": 0.212,
+      "military": 0.1528,
+      "nature": 0.1782,
+      "group": 0.2237,
+      "solo": 0.2002
+    }
+  },
+  {
+    "id": 196,
+    "file": "ppdt_0196.jpg",
+    "page": 206,
+    "width": 778,
+    "height": 635,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2121,
+      "urban": 0.182,
+      "military": 0.2027,
+      "nature": 0.1883,
+      "group": 0.1901,
+      "solo": 0.2045
+    }
+  },
+  {
+    "id": 197,
+    "file": "ppdt_0197.jpg",
+    "page": 207,
+    "width": 771,
+    "height": 665,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2101,
+      "urban": 0.197,
+      "military": 0.2004,
+      "nature": 0.1969,
+      "group": 0.2235,
+      "solo": 0.229
+    }
+  },
+  {
+    "id": 198,
+    "file": "ppdt_0198.jpg",
+    "page": 208,
+    "width": 771,
+    "height": 483,
+    "category": "group",
+    "scores": {
+      "rural": 0.1913,
+      "urban": 0.1945,
+      "military": 0.2239,
+      "nature": 0.1716,
+      "group": 0.2257,
+      "solo": 0.2155
+    }
+  },
+  {
+    "id": 199,
+    "file": "ppdt_0199.jpg",
+    "page": 209,
+    "width": 771,
+    "height": 572,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1916,
+      "urban": 0.1826,
+      "military": 0.1724,
+      "nature": 0.1878,
+      "group": 0.2019,
+      "solo": 0.2223
+    }
+  },
+  {
+    "id": 200,
+    "file": "ppdt_0200.jpg",
+    "page": 210,
+    "width": 771,
+    "height": 674,
+    "category": "group",
+    "scores": {
+      "rural": 0.1821,
+      "urban": 0.2048,
+      "military": 0.2073,
+      "nature": 0.1953,
+      "group": 0.2497,
+      "solo": 0.2346
+    }
+  },
+  {
+    "id": 201,
+    "file": "ppdt_0201.jpg",
+    "page": 211,
+    "width": 771,
+    "height": 605,
+    "category": "group",
+    "scores": {
+      "rural": 0.2018,
+      "urban": 0.1849,
+      "military": 0.192,
+      "nature": 0.1777,
+      "group": 0.2505,
+      "solo": 0.2046
+    }
+  },
+  {
+    "id": 202,
+    "file": "ppdt_0202.jpg",
+    "page": 212,
+    "width": 725,
+    "height": 540,
+    "category": "group",
+    "scores": {
+      "rural": 0.2241,
+      "urban": 0.1886,
+      "military": 0.1981,
+      "nature": 0.2171,
+      "group": 0.2407,
+      "solo": 0.2108
+    }
+  },
+  {
+    "id": 203,
+    "file": "ppdt_0203.jpg",
+    "page": 213,
+    "width": 640,
+    "height": 480,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1957,
+      "urban": 0.2092,
+      "military": 0.1984,
+      "nature": 0.1961,
+      "group": 0.2293,
+      "solo": 0.235
+    }
+  },
+  {
+    "id": 204,
+    "file": "ppdt_0204.jpg",
+    "page": 214,
+    "width": 771,
+    "height": 587,
+    "category": "rural",
+    "scores": {
+      "rural": 0.227,
+      "urban": 0.1832,
+      "military": 0.1945,
+      "nature": 0.1872,
+      "group": 0.2229,
+      "solo": 0.2089
+    }
+  },
+  {
+    "id": 205,
+    "file": "ppdt_0205.jpg",
+    "page": 215,
+    "width": 771,
+    "height": 450,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2531,
+      "urban": 0.1813,
+      "military": 0.1861,
+      "nature": 0.2122,
+      "group": 0.2401,
+      "solo": 0.2034
+    }
+  },
+  {
+    "id": 206,
+    "file": "ppdt_0206.jpg",
+    "page": 216,
+    "width": 771,
+    "height": 577,
+    "category": "military",
+    "scores": {
+      "rural": 0.2202,
+      "urban": 0.1968,
+      "military": 0.2526,
+      "nature": 0.2238,
+      "group": 0.2485,
+      "solo": 0.2415
+    }
+  },
+  {
+    "id": 207,
+    "file": "ppdt_0207.jpg",
+    "page": 217,
+    "width": 955,
+    "height": 653,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2078,
+      "urban": 0.1569,
+      "military": 0.2131,
+      "nature": 0.2165,
+      "group": 0.1838,
+      "solo": 0.1967
+    }
+  },
+  {
+    "id": 208,
+    "file": "ppdt_0208.jpg",
+    "page": 218,
+    "width": 771,
+    "height": 534,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2588,
+      "urban": 0.1964,
+      "military": 0.1936,
+      "nature": 0.2189,
+      "group": 0.2179,
+      "solo": 0.2208
+    }
+  },
+  {
+    "id": 209,
+    "file": "ppdt_0209.jpg",
+    "page": 219,
+    "width": 720,
+    "height": 577,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2225,
+      "urban": 0.1679,
+      "military": 0.194,
+      "nature": 0.2209,
+      "group": 0.205,
+      "solo": 0.2081
+    }
+  },
+  {
+    "id": 210,
+    "file": "ppdt_0210.jpg",
+    "page": 220,
+    "width": 771,
+    "height": 559,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2128,
+      "urban": 0.2284,
+      "military": 0.2033,
+      "nature": 0.2012,
+      "group": 0.2206,
+      "solo": 0.232
+    }
+  },
+  {
+    "id": 211,
+    "file": "ppdt_0211.jpg",
+    "page": 221,
+    "width": 771,
+    "height": 408,
+    "category": "group",
+    "scores": {
+      "rural": 0.1944,
+      "urban": 0.1689,
+      "military": 0.208,
+      "nature": 0.2172,
+      "group": 0.2418,
+      "solo": 0.2245
+    }
+  },
+  {
+    "id": 212,
+    "file": "ppdt_0212.jpg",
+    "page": 222,
+    "width": 771,
+    "height": 523,
+    "category": "group",
+    "scores": {
+      "rural": 0.2462,
+      "urban": 0.2005,
+      "military": 0.2128,
+      "nature": 0.1931,
+      "group": 0.2593,
+      "solo": 0.1989
+    }
+  },
+  {
+    "id": 213,
+    "file": "ppdt_0213.jpg",
+    "page": 223,
+    "width": 1280,
+    "height": 909,
+    "category": "group",
+    "scores": {
+      "rural": 0.2205,
+      "urban": 0.2054,
+      "military": 0.2149,
+      "nature": 0.2008,
+      "group": 0.2217,
+      "solo": 0.2189
+    }
+  },
+  {
+    "id": 214,
+    "file": "ppdt_0214.jpg",
+    "page": 224,
+    "width": 771,
+    "height": 670,
+    "category": "group",
+    "scores": {
+      "rural": 0.2182,
+      "urban": 0.1872,
+      "military": 0.2017,
+      "nature": 0.1987,
+      "group": 0.2627,
+      "solo": 0.2283
+    }
+  },
+  {
+    "id": 215,
+    "file": "ppdt_0215.jpg",
+    "page": 225,
+    "width": 968,
+    "height": 720,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2187,
+      "urban": 0.2152,
+      "military": 0.2058,
+      "nature": 0.2142,
+      "group": 0.2188,
+      "solo": 0.2196
+    }
+  },
+  {
+    "id": 216,
+    "file": "ppdt_0216.jpg",
+    "page": 226,
+    "width": 771,
+    "height": 468,
+    "category": "group",
+    "scores": {
+      "rural": 0.207,
+      "urban": 0.2121,
+      "military": 0.1974,
+      "nature": 0.2003,
+      "group": 0.2415,
+      "solo": 0.2199
+    }
+  },
+  {
+    "id": 217,
+    "file": "ppdt_0217.jpg",
+    "page": 227,
+    "width": 771,
+    "height": 538,
+    "category": "group",
+    "scores": {
+      "rural": 0.2466,
+      "urban": 0.1965,
+      "military": 0.2218,
+      "nature": 0.2129,
+      "group": 0.2598,
+      "solo": 0.2229
+    }
+  },
+  {
+    "id": 218,
+    "file": "ppdt_0218.jpg",
+    "page": 228,
+    "width": 720,
+    "height": 487,
+    "category": "group",
+    "scores": {
+      "rural": 0.1866,
+      "urban": 0.1994,
+      "military": 0.1956,
+      "nature": 0.1724,
+      "group": 0.2318,
+      "solo": 0.2142
+    }
+  },
+  {
+    "id": 219,
+    "file": "ppdt_0219.jpg",
+    "page": 229,
+    "width": 771,
+    "height": 629,
+    "category": "group",
+    "scores": {
+      "rural": 0.1963,
+      "urban": 0.1831,
+      "military": 0.2193,
+      "nature": 0.2028,
+      "group": 0.2547,
+      "solo": 0.2251
+    }
+  },
+  {
+    "id": 220,
+    "file": "ppdt_0220.jpg",
+    "page": 230,
+    "width": 771,
+    "height": 574,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1988,
+      "urban": 0.1753,
+      "military": 0.1804,
+      "nature": 0.1864,
+      "group": 0.2217,
+      "solo": 0.2345
+    }
+  },
+  {
+    "id": 221,
+    "file": "ppdt_0221.jpg",
+    "page": 231,
+    "width": 1280,
+    "height": 890,
+    "category": "group",
+    "scores": {
+      "rural": 0.1921,
+      "urban": 0.173,
+      "military": 0.1747,
+      "nature": 0.1794,
+      "group": 0.2011,
+      "solo": 0.1996
+    }
+  },
+  {
+    "id": 222,
+    "file": "ppdt_0222.jpg",
+    "page": 232,
+    "width": 771,
+    "height": 551,
+    "category": "group",
+    "scores": {
+      "rural": 0.2245,
+      "urban": 0.208,
+      "military": 0.1948,
+      "nature": 0.1944,
+      "group": 0.2582,
+      "solo": 0.2107
+    }
+  },
+  {
+    "id": 223,
+    "file": "ppdt_0223.jpg",
+    "page": 233,
+    "width": 771,
+    "height": 668,
+    "category": "group",
+    "scores": {
+      "rural": 0.2309,
+      "urban": 0.2241,
+      "military": 0.2198,
+      "nature": 0.2143,
+      "group": 0.2519,
+      "solo": 0.2163
+    }
+  },
+  {
+    "id": 224,
+    "file": "ppdt_0224.jpg",
+    "page": 234,
+    "width": 771,
+    "height": 517,
+    "category": "group",
+    "scores": {
+      "rural": 0.2035,
+      "urban": 0.1876,
+      "military": 0.1888,
+      "nature": 0.2167,
+      "group": 0.2381,
+      "solo": 0.2184
+    }
+  },
+  {
+    "id": 225,
+    "file": "ppdt_0225.jpg",
+    "page": 235,
+    "width": 771,
+    "height": 796,
+    "category": "group",
+    "scores": {
+      "rural": 0.1861,
+      "urban": 0.1887,
+      "military": 0.2017,
+      "nature": 0.1729,
+      "group": 0.2114,
+      "solo": 0.1942
+    }
+  },
+  {
+    "id": 226,
+    "file": "ppdt_0226.jpg",
+    "page": 236,
+    "width": 771,
+    "height": 549,
+    "category": "military",
+    "scores": {
+      "rural": 0.216,
+      "urban": 0.168,
+      "military": 0.2374,
+      "nature": 0.1976,
+      "group": 0.2028,
+      "solo": 0.2319
+    }
+  },
+  {
+    "id": 227,
+    "file": "ppdt_0227.jpg",
+    "page": 237,
+    "width": 1280,
+    "height": 960,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1777,
+      "urban": 0.2299,
+      "military": 0.1703,
+      "nature": 0.1847,
+      "group": 0.2057,
+      "solo": 0.2139
+    }
+  },
+  {
+    "id": 228,
+    "file": "ppdt_0228.jpg",
+    "page": 238,
+    "width": 771,
+    "height": 805,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2221,
+      "urban": 0.1907,
+      "military": 0.1877,
+      "nature": 0.2198,
+      "group": 0.2015,
+      "solo": 0.215
+    }
+  },
+  {
+    "id": 229,
+    "file": "ppdt_0229.jpg",
+    "page": 239,
+    "width": 771,
+    "height": 549,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2201,
+      "urban": 0.1867,
+      "military": 0.2009,
+      "nature": 0.2113,
+      "group": 0.2182,
+      "solo": 0.2237
+    }
+  },
+  {
+    "id": 230,
+    "file": "ppdt_0230.jpg",
+    "page": 240,
+    "width": 1070,
+    "height": 806,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2497,
+      "urban": 0.1921,
+      "military": 0.2046,
+      "nature": 0.2203,
+      "group": 0.2308,
+      "solo": 0.2289
+    }
+  },
+  {
+    "id": 231,
+    "file": "ppdt_0231.jpg",
+    "page": 241,
+    "width": 600,
+    "height": 390,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2372,
+      "urban": 0.1894,
+      "military": 0.221,
+      "nature": 0.2223,
+      "group": 0.2262,
+      "solo": 0.2207
+    }
+  },
+  {
+    "id": 232,
+    "file": "ppdt_0232.jpg",
+    "page": 242,
+    "width": 771,
+    "height": 483,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1968,
+      "urban": 0.2101,
+      "military": 0.209,
+      "nature": 0.197,
+      "group": 0.2029,
+      "solo": 0.2299
+    }
+  },
+  {
+    "id": 233,
+    "file": "ppdt_0233.jpg",
+    "page": 243,
+    "width": 771,
+    "height": 689,
+    "category": "group",
+    "scores": {
+      "rural": 0.1898,
+      "urban": 0.2062,
+      "military": 0.2112,
+      "nature": 0.1893,
+      "group": 0.2476,
+      "solo": 0.233
+    }
+  },
+  {
+    "id": 234,
+    "file": "ppdt_0234.jpg",
+    "page": 244,
+    "width": 771,
+    "height": 510,
+    "category": "rural",
+    "scores": {
+      "rural": 0.275,
+      "urban": 0.2325,
+      "military": 0.2158,
+      "nature": 0.2132,
+      "group": 0.2228,
+      "solo": 0.2415
+    }
+  },
+  {
+    "id": 235,
+    "file": "ppdt_0235.jpg",
+    "page": 245,
+    "width": 771,
+    "height": 637,
+    "category": "group",
+    "scores": {
+      "rural": 0.2154,
+      "urban": 0.2176,
+      "military": 0.2049,
+      "nature": 0.2011,
+      "group": 0.2568,
+      "solo": 0.2224
+    }
+  },
+  {
+    "id": 236,
+    "file": "ppdt_0236.jpg",
+    "page": 246,
+    "width": 837,
+    "height": 720,
+    "category": "rural",
+    "scores": {
+      "rural": 0.256,
+      "urban": 0.1956,
+      "military": 0.2137,
+      "nature": 0.2222,
+      "group": 0.211,
+      "solo": 0.2375
+    }
+  },
+  {
+    "id": 237,
+    "file": "ppdt_0237.jpg",
+    "page": 247,
+    "width": 771,
+    "height": 479,
+    "category": "group",
+    "scores": {
+      "rural": 0.2289,
+      "urban": 0.2065,
+      "military": 0.2236,
+      "nature": 0.2072,
+      "group": 0.2602,
+      "solo": 0.2258
+    }
+  },
+  {
+    "id": 238,
+    "file": "ppdt_0238.jpg",
+    "page": 248,
+    "width": 771,
+    "height": 721,
+    "category": "rural",
+    "scores": {
+      "rural": 0.254,
+      "urban": 0.1789,
+      "military": 0.1935,
+      "nature": 0.2236,
+      "group": 0.2174,
+      "solo": 0.223
+    }
+  },
+  {
+    "id": 239,
+    "file": "ppdt_0239.jpg",
+    "page": 249,
+    "width": 771,
+    "height": 588,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2442,
+      "urban": 0.1841,
+      "military": 0.2117,
+      "nature": 0.2476,
+      "group": 0.2339,
+      "solo": 0.233
+    }
+  },
+  {
+    "id": 240,
+    "file": "ppdt_0240.jpg",
+    "page": 250,
+    "width": 771,
+    "height": 718,
+    "category": "group",
+    "scores": {
+      "rural": 0.2363,
+      "urban": 0.2146,
+      "military": 0.2039,
+      "nature": 0.1843,
+      "group": 0.2597,
+      "solo": 0.2096
+    }
+  },
+  {
+    "id": 241,
+    "file": "ppdt_0241.jpg",
+    "page": 252,
+    "width": 1280,
+    "height": 860,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1917,
+      "urban": 0.1829,
+      "military": 0.1854,
+      "nature": 0.2123,
+      "group": 0.2071,
+      "solo": 0.2299
+    }
+  },
+  {
+    "id": 242,
+    "file": "ppdt_0242.jpg",
+    "page": 254,
+    "width": 771,
+    "height": 541,
+    "category": "group",
+    "scores": {
+      "rural": 0.1991,
+      "urban": 0.1903,
+      "military": 0.2272,
+      "nature": 0.1968,
+      "group": 0.2371,
+      "solo": 0.203
+    }
+  },
+  {
+    "id": 243,
+    "file": "ppdt_0243.jpg",
+    "page": 255,
+    "width": 640,
+    "height": 480,
+    "category": "group",
+    "scores": {
+      "rural": 0.2095,
+      "urban": 0.205,
+      "military": 0.1872,
+      "nature": 0.218,
+      "group": 0.2604,
+      "solo": 0.2172
+    }
+  },
+  {
+    "id": 244,
+    "file": "ppdt_0244.jpg",
+    "page": 256,
+    "width": 720,
+    "height": 499,
+    "category": "group",
+    "scores": {
+      "rural": 0.1789,
+      "urban": 0.1917,
+      "military": 0.175,
+      "nature": 0.1846,
+      "group": 0.2331,
+      "solo": 0.21
+    }
+  },
+  {
+    "id": 245,
+    "file": "ppdt_0245.jpg",
+    "page": 257,
+    "width": 771,
+    "height": 632,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2058,
+      "urban": 0.2008,
+      "military": 0.2097,
+      "nature": 0.1906,
+      "group": 0.2125,
+      "solo": 0.2131
+    }
+  },
+  {
+    "id": 246,
+    "file": "ppdt_0246.jpg",
+    "page": 258,
+    "width": 1280,
+    "height": 989,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2249,
+      "urban": 0.229,
+      "military": 0.1942,
+      "nature": 0.2157,
+      "group": 0.2219,
+      "solo": 0.2231
+    }
+  },
+  {
+    "id": 247,
+    "file": "ppdt_0247.jpg",
+    "page": 259,
+    "width": 699,
+    "height": 494,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2273,
+      "urban": 0.2006,
+      "military": 0.1952,
+      "nature": 0.1909,
+      "group": 0.2054,
+      "solo": 0.2212
+    }
+  },
+  {
+    "id": 248,
+    "file": "ppdt_0248.jpg",
+    "page": 260,
+    "width": 514,
+    "height": 392,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2233,
+      "urban": 0.1857,
+      "military": 0.1833,
+      "nature": 0.2224,
+      "group": 0.2105,
+      "solo": 0.242
+    }
+  },
+  {
+    "id": 249,
+    "file": "ppdt_0249.jpg",
+    "page": 261,
+    "width": 1280,
+    "height": 1025,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2386,
+      "urban": 0.2164,
+      "military": 0.2321,
+      "nature": 0.2102,
+      "group": 0.2319,
+      "solo": 0.2312
+    }
+  },
+  {
+    "id": 250,
+    "file": "ppdt_0250.jpg",
+    "page": 262,
+    "width": 1080,
+    "height": 839,
+    "category": "group",
+    "scores": {
+      "rural": 0.1648,
+      "urban": 0.181,
+      "military": 0.1882,
+      "nature": 0.1766,
+      "group": 0.254,
+      "solo": 0.2058
+    }
+  },
+  {
+    "id": 251,
+    "file": "ppdt_0251.jpg",
+    "page": 263,
+    "width": 718,
+    "height": 488,
+    "category": "group",
+    "scores": {
+      "rural": 0.2297,
+      "urban": 0.208,
+      "military": 0.2094,
+      "nature": 0.2203,
+      "group": 0.2427,
+      "solo": 0.2147
+    }
+  },
+  {
+    "id": 252,
+    "file": "ppdt_0252.jpg",
+    "page": 264,
+    "width": 374,
+    "height": 282,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2476,
+      "urban": 0.1862,
+      "military": 0.1796,
+      "nature": 0.2154,
+      "group": 0.1937,
+      "solo": 0.2228
+    }
+  },
+  {
+    "id": 253,
+    "file": "ppdt_0253.jpg",
+    "page": 265,
+    "width": 990,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.253,
+      "urban": 0.2114,
+      "military": 0.2088,
+      "nature": 0.2204,
+      "group": 0.237,
+      "solo": 0.2183
+    }
+  },
+  {
+    "id": 254,
+    "file": "ppdt_0254.jpg",
+    "page": 266,
+    "width": 480,
+    "height": 360,
+    "category": "group",
+    "scores": {
+      "rural": 0.2096,
+      "urban": 0.1916,
+      "military": 0.2022,
+      "nature": 0.2124,
+      "group": 0.2251,
+      "solo": 0.2148
+    }
+  },
+  {
+    "id": 255,
+    "file": "ppdt_0255.jpg",
+    "page": 267,
+    "width": 720,
+    "height": 497,
+    "category": "group",
+    "scores": {
+      "rural": 0.2067,
+      "urban": 0.2448,
+      "military": 0.2097,
+      "nature": 0.1882,
+      "group": 0.2501,
+      "solo": 0.1973
+    }
+  },
+  {
+    "id": 256,
+    "file": "ppdt_0256.jpg",
+    "page": 268,
+    "width": 720,
+    "height": 480,
+    "category": "group",
+    "scores": {
+      "rural": 0.1828,
+      "urban": 0.1792,
+      "military": 0.1687,
+      "nature": 0.1707,
+      "group": 0.2231,
+      "solo": 0.1855
+    }
+  },
+  {
+    "id": 257,
+    "file": "ppdt_0257.jpg",
+    "page": 269,
+    "width": 720,
+    "height": 519,
+    "category": "group",
+    "scores": {
+      "rural": 0.1726,
+      "urban": 0.1833,
+      "military": 0.1696,
+      "nature": 0.1782,
+      "group": 0.2496,
+      "solo": 0.2079
+    }
+  },
+  {
+    "id": 258,
+    "file": "ppdt_0258.jpg",
+    "page": 270,
+    "width": 588,
+    "height": 452,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1902,
+      "urban": 0.2237,
+      "military": 0.208,
+      "nature": 0.1831,
+      "group": 0.2178,
+      "solo": 0.2251
+    }
+  },
+  {
+    "id": 259,
+    "file": "ppdt_0259.jpg",
+    "page": 271,
+    "width": 640,
+    "height": 498,
+    "category": "group",
+    "scores": {
+      "rural": 0.2257,
+      "urban": 0.2066,
+      "military": 0.1931,
+      "nature": 0.1927,
+      "group": 0.2265,
+      "solo": 0.2031
+    }
+  },
+  {
+    "id": 260,
+    "file": "ppdt_0260.jpg",
+    "page": 272,
+    "width": 774,
+    "height": 526,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2154,
+      "urban": 0.2252,
+      "military": 0.1981,
+      "nature": 0.2082,
+      "group": 0.2155,
+      "solo": 0.2217
+    }
+  },
+  {
+    "id": 261,
+    "file": "ppdt_0261.jpg",
+    "page": 273,
+    "width": 671,
+    "height": 475,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2124,
+      "urban": 0.1959,
+      "military": 0.1821,
+      "nature": 0.2162,
+      "group": 0.2151,
+      "solo": 0.235
+    }
+  },
+  {
+    "id": 262,
+    "file": "ppdt_0262.jpg",
+    "page": 274,
+    "width": 1280,
+    "height": 995,
+    "category": "group",
+    "scores": {
+      "rural": 0.1674,
+      "urban": 0.2011,
+      "military": 0.1823,
+      "nature": 0.1949,
+      "group": 0.266,
+      "solo": 0.2199
+    }
+  },
+  {
+    "id": 263,
+    "file": "ppdt_0263.jpg",
+    "page": 275,
+    "width": 576,
+    "height": 456,
+    "category": "group",
+    "scores": {
+      "rural": 0.1717,
+      "urban": 0.2074,
+      "military": 0.1881,
+      "nature": 0.178,
+      "group": 0.2709,
+      "solo": 0.2014
+    }
+  },
+  {
+    "id": 264,
+    "file": "ppdt_0264.jpg",
+    "page": 276,
+    "width": 694,
+    "height": 442,
+    "category": "solo",
+    "scores": {
+      "rural": 0.192,
+      "urban": 0.1868,
+      "military": 0.19,
+      "nature": 0.1966,
+      "group": 0.2145,
+      "solo": 0.2185
+    }
+  },
+  {
+    "id": 265,
+    "file": "ppdt_0265.jpg",
+    "page": 277,
+    "width": 510,
+    "height": 550,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1781,
+      "urban": 0.169,
+      "military": 0.1891,
+      "nature": 0.1855,
+      "group": 0.2034,
+      "solo": 0.2133
+    }
+  },
+  {
+    "id": 266,
+    "file": "ppdt_0266.jpg",
+    "page": 278,
+    "width": 1280,
+    "height": 1091,
+    "category": "military",
+    "scores": {
+      "rural": 0.1758,
+      "urban": 0.1481,
+      "military": 0.2617,
+      "nature": 0.1534,
+      "group": 0.2053,
+      "solo": 0.2013
+    }
+  },
+  {
+    "id": 267,
+    "file": "ppdt_0267.jpg",
+    "page": 279,
+    "width": 613,
+    "height": 444,
+    "category": "group",
+    "scores": {
+      "rural": 0.1713,
+      "urban": 0.1684,
+      "military": 0.161,
+      "nature": 0.178,
+      "group": 0.216,
+      "solo": 0.198
+    }
+  },
+  {
+    "id": 268,
+    "file": "ppdt_0268.jpg",
+    "page": 280,
+    "width": 689,
+    "height": 545,
+    "category": "group",
+    "scores": {
+      "rural": 0.1698,
+      "urban": 0.219,
+      "military": 0.1769,
+      "nature": 0.1946,
+      "group": 0.2559,
+      "solo": 0.2191
+    }
+  },
+  {
+    "id": 269,
+    "file": "ppdt_0269.jpg",
+    "page": 281,
+    "width": 1080,
+    "height": 622,
+    "category": "group",
+    "scores": {
+      "rural": 0.1558,
+      "urban": 0.1734,
+      "military": 0.1744,
+      "nature": 0.1667,
+      "group": 0.2058,
+      "solo": 0.1934
+    }
+  },
+  {
+    "id": 270,
+    "file": "ppdt_0270.jpg",
+    "page": 282,
+    "width": 1079,
+    "height": 867,
+    "category": "group",
+    "scores": {
+      "rural": 0.2134,
+      "urban": 0.1916,
+      "military": 0.1736,
+      "nature": 0.2024,
+      "group": 0.2188,
+      "solo": 0.2131
+    }
+  },
+  {
+    "id": 271,
+    "file": "ppdt_0271.jpg",
+    "page": 283,
+    "width": 1280,
+    "height": 1112,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2483,
+      "urban": 0.2236,
+      "military": 0.2189,
+      "nature": 0.2061,
+      "group": 0.2164,
+      "solo": 0.2411
+    }
+  },
+  {
+    "id": 272,
+    "file": "ppdt_0272.jpg",
+    "page": 284,
+    "width": 720,
+    "height": 584,
+    "category": "group",
+    "scores": {
+      "rural": 0.1952,
+      "urban": 0.2083,
+      "military": 0.2126,
+      "nature": 0.1932,
+      "group": 0.2411,
+      "solo": 0.2338
+    }
+  },
+  {
+    "id": 273,
+    "file": "ppdt_0273.jpg",
+    "page": 285,
+    "width": 720,
+    "height": 540,
+    "category": "group",
+    "scores": {
+      "rural": 0.1539,
+      "urban": 0.1937,
+      "military": 0.1817,
+      "nature": 0.1695,
+      "group": 0.2626,
+      "solo": 0.2277
+    }
+  },
+  {
+    "id": 274,
+    "file": "ppdt_0274.jpg",
+    "page": 286,
+    "width": 1280,
+    "height": 930,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1471,
+      "urban": 0.1789,
+      "military": 0.1841,
+      "nature": 0.1867,
+      "group": 0.2062,
+      "solo": 0.2124
+    }
+  },
+  {
+    "id": 275,
+    "file": "ppdt_0275.jpg",
+    "page": 287,
+    "width": 1280,
+    "height": 1107,
+    "category": "military",
+    "scores": {
+      "rural": 0.2031,
+      "urban": 0.1647,
+      "military": 0.2535,
+      "nature": 0.2274,
+      "group": 0.2077,
+      "solo": 0.2249
+    }
+  },
+  {
+    "id": 276,
+    "file": "ppdt_0276.jpg",
+    "page": 288,
+    "width": 1280,
+    "height": 1021,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2311,
+      "urban": 0.1922,
+      "military": 0.1888,
+      "nature": 0.2002,
+      "group": 0.2215,
+      "solo": 0.2064
+    }
+  },
+  {
+    "id": 277,
+    "file": "ppdt_0277.jpg",
+    "page": 289,
+    "width": 720,
+    "height": 502,
+    "category": "rural",
+    "scores": {
+      "rural": 0.25,
+      "urban": 0.1832,
+      "military": 0.1884,
+      "nature": 0.2292,
+      "group": 0.1981,
+      "solo": 0.2358
+    }
+  },
+  {
+    "id": 278,
+    "file": "ppdt_0278.jpg",
+    "page": 290,
+    "width": 475,
+    "height": 377,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2285,
+      "urban": 0.2201,
+      "military": 0.196,
+      "nature": 0.1933,
+      "group": 0.2051,
+      "solo": 0.2111
+    }
+  },
+  {
+    "id": 279,
+    "file": "ppdt_0279.jpg",
+    "page": 291,
+    "width": 1182,
+    "height": 960,
+    "category": "solo",
+    "scores": {
+      "rural": 0.22,
+      "urban": 0.2124,
+      "military": 0.199,
+      "nature": 0.1772,
+      "group": 0.2205,
+      "solo": 0.2223
+    }
+  },
+  {
+    "id": 280,
+    "file": "ppdt_0280.jpg",
+    "page": 292,
+    "width": 320,
+    "height": 315,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2274,
+      "urban": 0.1946,
+      "military": 0.1948,
+      "nature": 0.1817,
+      "group": 0.1852,
+      "solo": 0.1884
+    }
+  },
+  {
+    "id": 281,
+    "file": "ppdt_0281.jpg",
+    "page": 293,
+    "width": 720,
+    "height": 516,
+    "category": "group",
+    "scores": {
+      "rural": 0.1761,
+      "urban": 0.1926,
+      "military": 0.1744,
+      "nature": 0.1609,
+      "group": 0.2287,
+      "solo": 0.2042
+    }
+  },
+  {
+    "id": 282,
+    "file": "ppdt_0282.jpg",
+    "page": 294,
+    "width": 1280,
+    "height": 986,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1883,
+      "urban": 0.1789,
+      "military": 0.2049,
+      "nature": 0.1832,
+      "group": 0.1821,
+      "solo": 0.2225
+    }
+  },
+  {
+    "id": 283,
+    "file": "ppdt_0283.jpg",
+    "page": 295,
+    "width": 1280,
+    "height": 829,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2392,
+      "urban": 0.1917,
+      "military": 0.211,
+      "nature": 0.2054,
+      "group": 0.203,
+      "solo": 0.2239
+    }
+  },
+  {
+    "id": 284,
+    "file": "ppdt_0284.jpg",
+    "page": 296,
+    "width": 454,
+    "height": 329,
+    "category": "group",
+    "scores": {
+      "rural": 0.1907,
+      "urban": 0.1891,
+      "military": 0.202,
+      "nature": 0.1968,
+      "group": 0.2262,
+      "solo": 0.2131
+    }
+  },
+  {
+    "id": 285,
+    "file": "ppdt_0285.jpg",
+    "page": 297,
+    "width": 1033,
+    "height": 720,
+    "category": "group",
+    "scores": {
+      "rural": 0.18,
+      "urban": 0.1868,
+      "military": 0.1646,
+      "nature": 0.1733,
+      "group": 0.2552,
+      "solo": 0.2076
+    }
+  },
+  {
+    "id": 286,
+    "file": "ppdt_0286.jpg",
+    "page": 298,
+    "width": 1207,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2593,
+      "urban": 0.1965,
+      "military": 0.1913,
+      "nature": 0.2096,
+      "group": 0.2,
+      "solo": 0.1992
+    }
+  },
+  {
+    "id": 287,
+    "file": "ppdt_0287.jpg",
+    "page": 299,
+    "width": 1161,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2445,
+      "urban": 0.2047,
+      "military": 0.1964,
+      "nature": 0.2348,
+      "group": 0.2411,
+      "solo": 0.2179
+    }
+  },
+  {
+    "id": 288,
+    "file": "ppdt_0288.jpg",
+    "page": 300,
+    "width": 720,
+    "height": 544,
+    "category": "group",
+    "scores": {
+      "rural": 0.1683,
+      "urban": 0.1671,
+      "military": 0.177,
+      "nature": 0.1811,
+      "group": 0.2501,
+      "solo": 0.2036
+    }
+  },
+  {
+    "id": 289,
+    "file": "ppdt_0289.jpg",
+    "page": 301,
+    "width": 1280,
+    "height": 821,
+    "category": "group",
+    "scores": {
+      "rural": 0.1771,
+      "urban": 0.222,
+      "military": 0.1991,
+      "nature": 0.1753,
+      "group": 0.2392,
+      "solo": 0.1914
+    }
+  },
+  {
+    "id": 290,
+    "file": "ppdt_0290.jpg",
+    "page": 303,
+    "width": 1280,
+    "height": 936,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2188,
+      "urban": 0.1787,
+      "military": 0.1844,
+      "nature": 0.2092,
+      "group": 0.1854,
+      "solo": 0.2417
+    }
+  },
+  {
+    "id": 291,
+    "file": "ppdt_0291.jpg",
+    "page": 304,
+    "width": 1280,
+    "height": 945,
+    "category": "group",
+    "scores": {
+      "rural": 0.1716,
+      "urban": 0.2031,
+      "military": 0.1735,
+      "nature": 0.1744,
+      "group": 0.2472,
+      "solo": 0.2123
+    }
+  },
+  {
+    "id": 292,
+    "file": "ppdt_0292.jpg",
+    "page": 306,
+    "width": 1280,
+    "height": 720,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1435,
+      "urban": 0.193,
+      "military": 0.1704,
+      "nature": 0.1719,
+      "group": 0.1943,
+      "solo": 0.212
+    }
+  },
+  {
+    "id": 293,
+    "file": "ppdt_0293.jpg",
+    "page": 307,
+    "width": 1080,
+    "height": 753,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2219,
+      "urban": 0.1872,
+      "military": 0.1952,
+      "nature": 0.2135,
+      "group": 0.2081,
+      "solo": 0.2233
+    }
+  },
+  {
+    "id": 294,
+    "file": "ppdt_0294.jpg",
+    "page": 308,
+    "width": 1280,
+    "height": 930,
+    "category": "group",
+    "scores": {
+      "rural": 0.1791,
+      "urban": 0.2017,
+      "military": 0.2149,
+      "nature": 0.175,
+      "group": 0.2295,
+      "solo": 0.2201
+    }
+  },
+  {
+    "id": 295,
+    "file": "ppdt_0295.jpg",
+    "page": 309,
+    "width": 1280,
+    "height": 881,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1603,
+      "urban": 0.2104,
+      "military": 0.1748,
+      "nature": 0.1807,
+      "group": 0.2157,
+      "solo": 0.219
+    }
+  },
+  {
+    "id": 296,
+    "file": "ppdt_0296.jpg",
+    "page": 310,
+    "width": 1170,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2361,
+      "urban": 0.1906,
+      "military": 0.1996,
+      "nature": 0.2225,
+      "group": 0.2066,
+      "solo": 0.2107
+    }
+  },
+  {
+    "id": 297,
+    "file": "ppdt_0297.jpg",
+    "page": 311,
+    "width": 908,
+    "height": 336,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2385,
+      "urban": 0.2314,
+      "military": 0.2327,
+      "nature": 0.2225,
+      "group": 0.2232,
+      "solo": 0.2321
+    }
+  },
+  {
+    "id": 298,
+    "file": "ppdt_0298.jpg",
+    "page": 312,
+    "width": 1280,
+    "height": 935,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1766,
+      "urban": 0.1845,
+      "military": 0.1937,
+      "nature": 0.1775,
+      "group": 0.2151,
+      "solo": 0.22
+    }
+  },
+  {
+    "id": 299,
+    "file": "ppdt_0299.jpg",
+    "page": 313,
+    "width": 1122,
+    "height": 960,
+    "category": "group",
+    "scores": {
+      "rural": 0.1804,
+      "urban": 0.1975,
+      "military": 0.2212,
+      "nature": 0.1698,
+      "group": 0.2592,
+      "solo": 0.2156
+    }
+  },
+  {
+    "id": 300,
+    "file": "ppdt_0300.jpg",
+    "page": 314,
+    "width": 967,
+    "height": 666,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2305,
+      "urban": 0.1882,
+      "military": 0.1908,
+      "nature": 0.2151,
+      "group": 0.1991,
+      "solo": 0.2129
+    }
+  },
+  {
+    "id": 301,
+    "file": "ppdt_0301.jpg",
+    "page": 315,
+    "width": 819,
+    "height": 720,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2485,
+      "urban": 0.1988,
+      "military": 0.2198,
+      "nature": 0.2182,
+      "group": 0.2149,
+      "solo": 0.2354
+    }
+  },
+  {
+    "id": 302,
+    "file": "ppdt_0302.jpg",
+    "page": 316,
+    "width": 715,
+    "height": 540,
+    "category": "group",
+    "scores": {
+      "rural": 0.2286,
+      "urban": 0.1949,
+      "military": 0.206,
+      "nature": 0.2204,
+      "group": 0.2463,
+      "solo": 0.2128
+    }
+  },
+  {
+    "id": 303,
+    "file": "ppdt_0303.jpg",
+    "page": 317,
+    "width": 1201,
+    "height": 960,
+    "category": "solo",
+    "scores": {
+      "rural": 0.216,
+      "urban": 0.1994,
+      "military": 0.2037,
+      "nature": 0.2131,
+      "group": 0.2054,
+      "solo": 0.2248
+    }
+  },
+  {
+    "id": 304,
+    "file": "ppdt_0304.jpg",
+    "page": 318,
+    "width": 1280,
+    "height": 720,
+    "category": "group",
+    "scores": {
+      "rural": 0.2088,
+      "urban": 0.1923,
+      "military": 0.2046,
+      "nature": 0.2161,
+      "group": 0.2566,
+      "solo": 0.2244
+    }
+  },
+  {
+    "id": 305,
+    "file": "ppdt_0305.jpg",
+    "page": 319,
+    "width": 340,
+    "height": 288,
+    "category": "group",
+    "scores": {
+      "rural": 0.2371,
+      "urban": 0.2258,
+      "military": 0.2032,
+      "nature": 0.2283,
+      "group": 0.2484,
+      "solo": 0.207
+    }
+  },
+  {
+    "id": 306,
+    "file": "ppdt_0306.jpg",
+    "page": 320,
+    "width": 650,
+    "height": 358,
+    "category": "group",
+    "scores": {
+      "rural": 0.1907,
+      "urban": 0.1616,
+      "military": 0.2092,
+      "nature": 0.1899,
+      "group": 0.2112,
+      "solo": 0.2038
+    }
+  },
+  {
+    "id": 307,
+    "file": "ppdt_0307.jpg",
+    "page": 321,
+    "width": 1080,
+    "height": 756,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2144,
+      "urban": 0.2202,
+      "military": 0.203,
+      "nature": 0.1973,
+      "group": 0.2138,
+      "solo": 0.2159
+    }
+  },
+  {
+    "id": 308,
+    "file": "ppdt_0308.jpg",
+    "page": 322,
+    "width": 1223,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.231,
+      "urban": 0.1935,
+      "military": 0.1964,
+      "nature": 0.2286,
+      "group": 0.2043,
+      "solo": 0.2305
+    }
+  },
+  {
+    "id": 309,
+    "file": "ppdt_0309.jpg",
+    "page": 323,
+    "width": 1080,
+    "height": 748,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2246,
+      "urban": 0.2355,
+      "military": 0.1868,
+      "nature": 0.2121,
+      "group": 0.2069,
+      "solo": 0.2095
+    }
+  },
+  {
+    "id": 310,
+    "file": "ppdt_0310.jpg",
+    "page": 324,
+    "width": 1080,
+    "height": 761,
+    "category": "group",
+    "scores": {
+      "rural": 0.2389,
+      "urban": 0.2153,
+      "military": 0.2206,
+      "nature": 0.2133,
+      "group": 0.2585,
+      "solo": 0.2061
+    }
+  },
+  {
+    "id": 311,
+    "file": "ppdt_0311.jpg",
+    "page": 325,
+    "width": 800,
+    "height": 451,
+    "category": "group",
+    "scores": {
+      "rural": 0.1435,
+      "urban": 0.1967,
+      "military": 0.167,
+      "nature": 0.1784,
+      "group": 0.2408,
+      "solo": 0.2003
+    }
+  },
+  {
+    "id": 312,
+    "file": "ppdt_0312.jpg",
+    "page": 326,
+    "width": 367,
+    "height": 273,
+    "category": "group",
+    "scores": {
+      "rural": 0.2203,
+      "urban": 0.2003,
+      "military": 0.1981,
+      "nature": 0.2179,
+      "group": 0.2482,
+      "solo": 0.2128
+    }
+  },
+  {
+    "id": 313,
+    "file": "ppdt_0313.jpg",
+    "page": 327,
+    "width": 640,
+    "height": 640,
+    "category": "group",
+    "scores": {
+      "rural": 0.184,
+      "urban": 0.2178,
+      "military": 0.1883,
+      "nature": 0.1967,
+      "group": 0.2557,
+      "solo": 0.2202
+    }
+  },
+  {
+    "id": 314,
+    "file": "ppdt_0314.jpg",
+    "page": 328,
+    "width": 1067,
+    "height": 630,
+    "category": "military",
+    "scores": {
+      "rural": 0.1977,
+      "urban": 0.1816,
+      "military": 0.262,
+      "nature": 0.1913,
+      "group": 0.2042,
+      "solo": 0.2215
+    }
+  },
+  {
+    "id": 315,
+    "file": "ppdt_0315.jpg",
+    "page": 329,
+    "width": 938,
+    "height": 1280,
+    "category": "group",
+    "scores": {
+      "rural": 0.1547,
+      "urban": 0.1668,
+      "military": 0.1665,
+      "nature": 0.1649,
+      "group": 0.2079,
+      "solo": 0.2062
+    }
+  },
+  {
+    "id": 316,
+    "file": "ppdt_0316.jpg",
+    "page": 330,
+    "width": 599,
+    "height": 419,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1546,
+      "urban": 0.1771,
+      "military": 0.1765,
+      "nature": 0.1694,
+      "group": 0.2135,
+      "solo": 0.2287
+    }
+  },
+  {
+    "id": 317,
+    "file": "ppdt_0317.jpg",
+    "page": 331,
+    "width": 1080,
+    "height": 864,
+    "category": "group",
+    "scores": {
+      "rural": 0.1648,
+      "urban": 0.1932,
+      "military": 0.1748,
+      "nature": 0.1649,
+      "group": 0.2266,
+      "solo": 0.2075
+    }
+  },
+  {
+    "id": 318,
+    "file": "ppdt_0318.jpg",
+    "page": 332,
+    "width": 1080,
+    "height": 606,
+    "category": "military",
+    "scores": {
+      "rural": 0.2025,
+      "urban": 0.1836,
+      "military": 0.263,
+      "nature": 0.2078,
+      "group": 0.219,
+      "solo": 0.2007
+    }
+  },
+  {
+    "id": 319,
+    "file": "ppdt_0319.jpg",
+    "page": 333,
+    "width": 1080,
+    "height": 730,
+    "category": "group",
+    "scores": {
+      "rural": 0.1854,
+      "urban": 0.205,
+      "military": 0.2108,
+      "nature": 0.2043,
+      "group": 0.2477,
+      "solo": 0.2105
+    }
+  },
+  {
+    "id": 320,
+    "file": "ppdt_0320.jpg",
+    "page": 334,
+    "width": 1280,
+    "height": 947,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2826,
+      "urban": 0.1798,
+      "military": 0.1989,
+      "nature": 0.1996,
+      "group": 0.1899,
+      "solo": 0.1957
+    }
+  },
+  {
+    "id": 321,
+    "file": "ppdt_0321.jpg",
+    "page": 336,
+    "width": 1280,
+    "height": 960,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2393,
+      "urban": 0.1899,
+      "military": 0.2192,
+      "nature": 0.2409,
+      "group": 0.234,
+      "solo": 0.2421
+    }
+  },
+  {
+    "id": 322,
+    "file": "ppdt_0322.jpg",
+    "page": 337,
+    "width": 1080,
+    "height": 569,
+    "category": "group",
+    "scores": {
+      "rural": 0.1564,
+      "urban": 0.1662,
+      "military": 0.1814,
+      "nature": 0.1568,
+      "group": 0.1988,
+      "solo": 0.1929
+    }
+  },
+  {
+    "id": 323,
+    "file": "ppdt_0323.jpg",
+    "page": 338,
+    "width": 1280,
+    "height": 799,
+    "category": "group",
+    "scores": {
+      "rural": 0.1679,
+      "urban": 0.1985,
+      "military": 0.2292,
+      "nature": 0.1686,
+      "group": 0.23,
+      "solo": 0.2045
+    }
+  },
+  {
+    "id": 324,
+    "file": "ppdt_0324.jpg",
+    "page": 339,
+    "width": 600,
+    "height": 423,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1977,
+      "urban": 0.2461,
+      "military": 0.189,
+      "nature": 0.1849,
+      "group": 0.2256,
+      "solo": 0.2167
+    }
+  },
+  {
+    "id": 325,
+    "file": "ppdt_0325.jpg",
+    "page": 340,
+    "width": 1080,
+    "height": 873,
+    "category": "group",
+    "scores": {
+      "rural": 0.2004,
+      "urban": 0.1707,
+      "military": 0.1707,
+      "nature": 0.1737,
+      "group": 0.2419,
+      "solo": 0.2
+    }
+  },
+  {
+    "id": 326,
+    "file": "ppdt_0326.jpg",
+    "page": 341,
+    "width": 740,
+    "height": 623,
+    "category": "group",
+    "scores": {
+      "rural": 0.2103,
+      "urban": 0.2198,
+      "military": 0.2051,
+      "nature": 0.1896,
+      "group": 0.2393,
+      "solo": 0.213
+    }
+  },
+  {
+    "id": 327,
+    "file": "ppdt_0327.jpg",
+    "page": 342,
+    "width": 1073,
+    "height": 524,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2006,
+      "urban": 0.2102,
+      "military": 0.2031,
+      "nature": 0.194,
+      "group": 0.2088,
+      "solo": 0.2075
+    }
+  },
+  {
+    "id": 328,
+    "file": "ppdt_0328.jpg",
+    "page": 343,
+    "width": 1080,
+    "height": 817,
+    "category": "urban",
+    "scores": {
+      "rural": 0.231,
+      "urban": 0.2555,
+      "military": 0.1971,
+      "nature": 0.2078,
+      "group": 0.2182,
+      "solo": 0.2154
+    }
+  },
+  {
+    "id": 329,
+    "file": "ppdt_0329.jpg",
+    "page": 344,
+    "width": 1080,
+    "height": 798,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2532,
+      "urban": 0.2119,
+      "military": 0.1965,
+      "nature": 0.2411,
+      "group": 0.2421,
+      "solo": 0.2116
+    }
+  },
+  {
+    "id": 330,
+    "file": "ppdt_0330.jpg",
+    "page": 345,
+    "width": 720,
+    "height": 561,
+    "category": "group",
+    "scores": {
+      "rural": 0.1786,
+      "urban": 0.2384,
+      "military": 0.2098,
+      "nature": 0.1857,
+      "group": 0.2512,
+      "solo": 0.2137
+    }
+  },
+  {
+    "id": 331,
+    "file": "ppdt_0331.jpg",
+    "page": 346,
+    "width": 720,
+    "height": 551,
+    "category": "group",
+    "scores": {
+      "rural": 0.1641,
+      "urban": 0.2162,
+      "military": 0.1787,
+      "nature": 0.1906,
+      "group": 0.2354,
+      "solo": 0.2137
+    }
+  },
+  {
+    "id": 332,
+    "file": "ppdt_0332.jpg",
+    "page": 348,
+    "width": 828,
+    "height": 939,
+    "category": "group",
+    "scores": {
+      "rural": 0.2076,
+      "urban": 0.193,
+      "military": 0.1759,
+      "nature": 0.1897,
+      "group": 0.226,
+      "solo": 0.1952
+    }
+  },
+  {
+    "id": 333,
+    "file": "ppdt_0333.jpg",
+    "page": 349,
+    "width": 1080,
+    "height": 900,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2197,
+      "urban": 0.2203,
+      "military": 0.1765,
+      "nature": 0.2168,
+      "group": 0.196,
+      "solo": 0.2182
+    }
+  },
+  {
+    "id": 334,
+    "file": "ppdt_0334.jpg",
+    "page": 350,
+    "width": 1280,
+    "height": 877,
+    "category": "group",
+    "scores": {
+      "rural": 0.1278,
+      "urban": 0.162,
+      "military": 0.1641,
+      "nature": 0.1471,
+      "group": 0.2039,
+      "solo": 0.1737
+    }
+  },
+  {
+    "id": 335,
+    "file": "ppdt_0335.jpg",
+    "page": 351,
+    "width": 1080,
+    "height": 796,
+    "category": "military",
+    "scores": {
+      "rural": 0.1959,
+      "urban": 0.2273,
+      "military": 0.2699,
+      "nature": 0.1915,
+      "group": 0.2289,
+      "solo": 0.2202
+    }
+  },
+  {
+    "id": 336,
+    "file": "ppdt_0336.jpg",
+    "page": 352,
+    "width": 636,
+    "height": 576,
+    "category": "group",
+    "scores": {
+      "rural": 0.1666,
+      "urban": 0.1629,
+      "military": 0.166,
+      "nature": 0.1666,
+      "group": 0.2096,
+      "solo": 0.2068
+    }
+  },
+  {
+    "id": 337,
+    "file": "ppdt_0337.jpg",
+    "page": 353,
+    "width": 368,
+    "height": 286,
+    "category": "military",
+    "scores": {
+      "rural": 0.2055,
+      "urban": 0.1744,
+      "military": 0.2388,
+      "nature": 0.2342,
+      "group": 0.2114,
+      "solo": 0.2311
+    }
+  },
+  {
+    "id": 338,
+    "file": "ppdt_0338.jpg",
+    "page": 354,
+    "width": 592,
+    "height": 452,
+    "category": "group",
+    "scores": {
+      "rural": 0.1677,
+      "urban": 0.2064,
+      "military": 0.1915,
+      "nature": 0.1718,
+      "group": 0.2433,
+      "solo": 0.2278
+    }
+  },
+  {
+    "id": 339,
+    "file": "ppdt_0339.jpg",
+    "page": 355,
+    "width": 1117,
+    "height": 720,
+    "category": "military",
+    "scores": {
+      "rural": 0.1868,
+      "urban": 0.1828,
+      "military": 0.2104,
+      "nature": 0.1979,
+      "group": 0.2006,
+      "solo": 0.2021
+    }
+  },
+  {
+    "id": 340,
+    "file": "ppdt_0340.jpg",
+    "page": 356,
+    "width": 720,
+    "height": 488,
+    "category": "group",
+    "scores": {
+      "rural": 0.1561,
+      "urban": 0.1777,
+      "military": 0.1684,
+      "nature": 0.1698,
+      "group": 0.2317,
+      "solo": 0.221
+    }
+  },
+  {
+    "id": 341,
+    "file": "ppdt_0341.jpg",
+    "page": 357,
+    "width": 492,
+    "height": 384,
+    "category": "group",
+    "scores": {
+      "rural": 0.1679,
+      "urban": 0.16,
+      "military": 0.154,
+      "nature": 0.1871,
+      "group": 0.2267,
+      "solo": 0.2137
+    }
+  },
+  {
+    "id": 342,
+    "file": "ppdt_0342.jpg",
+    "page": 358,
+    "width": 612,
+    "height": 400,
+    "category": "group",
+    "scores": {
+      "rural": 0.1442,
+      "urban": 0.1906,
+      "military": 0.1975,
+      "nature": 0.1626,
+      "group": 0.2214,
+      "solo": 0.2127
+    }
+  },
+  {
+    "id": 343,
+    "file": "ppdt_0343.jpg",
+    "page": 359,
+    "width": 1080,
+    "height": 775,
+    "category": "group",
+    "scores": {
+      "rural": 0.1586,
+      "urban": 0.2154,
+      "military": 0.2093,
+      "nature": 0.178,
+      "group": 0.2763,
+      "solo": 0.2153
+    }
+  },
+  {
+    "id": 344,
+    "file": "ppdt_0344.jpg",
+    "page": 360,
+    "width": 636,
+    "height": 392,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1793,
+      "urban": 0.1835,
+      "military": 0.2163,
+      "nature": 0.1869,
+      "group": 0.2043,
+      "solo": 0.2195
+    }
+  },
+  {
+    "id": 345,
+    "file": "ppdt_0345.jpg",
+    "page": 361,
+    "width": 676,
+    "height": 456,
+    "category": "group",
+    "scores": {
+      "rural": 0.2162,
+      "urban": 0.1812,
+      "military": 0.1981,
+      "nature": 0.2268,
+      "group": 0.2359,
+      "solo": 0.2359
+    }
+  },
+  {
+    "id": 346,
+    "file": "ppdt_0346.jpg",
+    "page": 362,
+    "width": 584,
+    "height": 448,
+    "category": "group",
+    "scores": {
+      "rural": 0.2149,
+      "urban": 0.2156,
+      "military": 0.1846,
+      "nature": 0.1951,
+      "group": 0.2288,
+      "solo": 0.2242
+    }
+  },
+  {
+    "id": 347,
+    "file": "ppdt_0347.jpg",
+    "page": 363,
+    "width": 636,
+    "height": 468,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2315,
+      "urban": 0.1793,
+      "military": 0.2172,
+      "nature": 0.2294,
+      "group": 0.2059,
+      "solo": 0.2394
+    }
+  },
+  {
+    "id": 348,
+    "file": "ppdt_0348.jpg",
+    "page": 364,
+    "width": 536,
+    "height": 384,
+    "category": "group",
+    "scores": {
+      "rural": 0.1551,
+      "urban": 0.1754,
+      "military": 0.2096,
+      "nature": 0.1796,
+      "group": 0.2504,
+      "solo": 0.2189
+    }
+  },
+  {
+    "id": 349,
+    "file": "ppdt_0349.jpg",
+    "page": 365,
+    "width": 720,
+    "height": 492,
+    "category": "group",
+    "scores": {
+      "rural": 0.2008,
+      "urban": 0.2046,
+      "military": 0.2074,
+      "nature": 0.1787,
+      "group": 0.2258,
+      "solo": 0.2129
+    }
+  },
+  {
+    "id": 350,
+    "file": "ppdt_0350.jpg",
+    "page": 366,
+    "width": 588,
+    "height": 436,
+    "category": "group",
+    "scores": {
+      "rural": 0.2077,
+      "urban": 0.1789,
+      "military": 0.1816,
+      "nature": 0.2106,
+      "group": 0.2314,
+      "solo": 0.2062
+    }
+  },
+  {
+    "id": 351,
+    "file": "ppdt_0351.jpg",
+    "page": 367,
+    "width": 564,
+    "height": 416,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1747,
+      "urban": 0.1831,
+      "military": 0.1775,
+      "nature": 0.1816,
+      "group": 0.2116,
+      "solo": 0.2296
+    }
+  },
+  {
+    "id": 352,
+    "file": "ppdt_0352.jpg",
+    "page": 368,
+    "width": 516,
+    "height": 396,
+    "category": "urban",
+    "scores": {
+      "rural": 0.1854,
+      "urban": 0.2194,
+      "military": 0.181,
+      "nature": 0.1987,
+      "group": 0.2128,
+      "solo": 0.212
+    }
+  },
+  {
+    "id": 353,
+    "file": "ppdt_0353.jpg",
+    "page": 369,
+    "width": 1080,
+    "height": 787,
+    "category": "solo",
+    "scores": {
+      "rural": 0.179,
+      "urban": 0.1587,
+      "military": 0.172,
+      "nature": 0.1628,
+      "group": 0.2002,
+      "solo": 0.2012
+    }
+  },
+  {
+    "id": 354,
+    "file": "ppdt_0354.jpg",
+    "page": 370,
+    "width": 591,
+    "height": 421,
+    "category": "group",
+    "scores": {
+      "rural": 0.2023,
+      "urban": 0.1905,
+      "military": 0.1933,
+      "nature": 0.2097,
+      "group": 0.2203,
+      "solo": 0.2188
+    }
+  },
+  {
+    "id": 355,
+    "file": "ppdt_0355.jpg",
+    "page": 371,
+    "width": 590,
+    "height": 546,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1771,
+      "urban": 0.1855,
+      "military": 0.1825,
+      "nature": 0.1714,
+      "group": 0.2054,
+      "solo": 0.2215
+    }
+  },
+  {
+    "id": 356,
+    "file": "ppdt_0356.jpg",
+    "page": 372,
+    "width": 590,
+    "height": 793,
+    "category": "military",
+    "scores": {
+      "rural": 0.1634,
+      "urban": 0.1683,
+      "military": 0.2666,
+      "nature": 0.1711,
+      "group": 0.1951,
+      "solo": 0.2341
+    }
+  },
+  {
+    "id": 357,
+    "file": "ppdt_0357.jpg",
+    "page": 373,
+    "width": 960,
+    "height": 762,
+    "category": "group",
+    "scores": {
+      "rural": 0.2234,
+      "urban": 0.2098,
+      "military": 0.2104,
+      "nature": 0.1999,
+      "group": 0.2255,
+      "solo": 0.2098
+    }
+  },
+  {
+    "id": 358,
+    "file": "ppdt_0358.jpg",
+    "page": 374,
+    "width": 960,
+    "height": 724,
+    "category": "urban",
+    "scores": {
+      "rural": 0.214,
+      "urban": 0.2386,
+      "military": 0.1863,
+      "nature": 0.1811,
+      "group": 0.207,
+      "solo": 0.204
+    }
+  },
+  {
+    "id": 359,
+    "file": "ppdt_0359.jpg",
+    "page": 375,
+    "width": 960,
+    "height": 725,
+    "category": "group",
+    "scores": {
+      "rural": 0.1816,
+      "urban": 0.2042,
+      "military": 0.1885,
+      "nature": 0.1852,
+      "group": 0.2509,
+      "solo": 0.2162
+    }
+  },
+  {
+    "id": 360,
+    "file": "ppdt_0360.jpg",
+    "page": 376,
+    "width": 960,
+    "height": 740,
+    "category": "military",
+    "scores": {
+      "rural": 0.2154,
+      "urban": 0.1883,
+      "military": 0.2292,
+      "nature": 0.2124,
+      "group": 0.2221,
+      "solo": 0.2261
+    }
+  },
+  {
+    "id": 361,
+    "file": "ppdt_0361.jpg",
+    "page": 377,
+    "width": 960,
+    "height": 651,
+    "category": "group",
+    "scores": {
+      "rural": 0.1691,
+      "urban": 0.2062,
+      "military": 0.2034,
+      "nature": 0.1761,
+      "group": 0.2373,
+      "solo": 0.2186
+    }
+  },
+  {
+    "id": 362,
+    "file": "ppdt_0362.jpg",
+    "page": 378,
+    "width": 1054,
+    "height": 960,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2263,
+      "urban": 0.1855,
+      "military": 0.1977,
+      "nature": 0.204,
+      "group": 0.2262,
+      "solo": 0.2211
+    }
+  },
+  {
+    "id": 363,
+    "file": "ppdt_0363.jpg",
+    "page": 379,
+    "width": 960,
+    "height": 665,
+    "category": "group",
+    "scores": {
+      "rural": 0.1938,
+      "urban": 0.2242,
+      "military": 0.1926,
+      "nature": 0.1863,
+      "group": 0.2252,
+      "solo": 0.2216
+    }
+  },
+  {
+    "id": 364,
+    "file": "ppdt_0364.jpg",
+    "page": 380,
+    "width": 1079,
+    "height": 810,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2287,
+      "urban": 0.1761,
+      "military": 0.1819,
+      "nature": 0.1967,
+      "group": 0.2098,
+      "solo": 0.2054
+    }
+  },
+  {
+    "id": 365,
+    "file": "ppdt_0365.jpg",
+    "page": 381,
+    "width": 960,
+    "height": 744,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1986,
+      "urban": 0.1989,
+      "military": 0.2125,
+      "nature": 0.2206,
+      "group": 0.2225,
+      "solo": 0.2514
+    }
+  },
+  {
+    "id": 366,
+    "file": "ppdt_0366.jpg",
+    "page": 382,
+    "width": 960,
+    "height": 688,
+    "category": "group",
+    "scores": {
+      "rural": 0.1721,
+      "urban": 0.1905,
+      "military": 0.188,
+      "nature": 0.1844,
+      "group": 0.2235,
+      "solo": 0.2075
+    }
+  },
+  {
+    "id": 367,
+    "file": "ppdt_0367.jpg",
+    "page": 383,
+    "width": 960,
+    "height": 692,
+    "category": "group",
+    "scores": {
+      "rural": 0.1721,
+      "urban": 0.192,
+      "military": 0.1992,
+      "nature": 0.1873,
+      "group": 0.2491,
+      "solo": 0.2269
+    }
+  },
+  {
+    "id": 368,
+    "file": "ppdt_0368.jpg",
+    "page": 384,
+    "width": 960,
+    "height": 693,
+    "category": "group",
+    "scores": {
+      "rural": 0.2017,
+      "urban": 0.2147,
+      "military": 0.2404,
+      "nature": 0.1952,
+      "group": 0.2452,
+      "solo": 0.2251
+    }
+  },
+  {
+    "id": 369,
+    "file": "ppdt_0369.jpg",
+    "page": 385,
+    "width": 960,
+    "height": 756,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2436,
+      "urban": 0.2168,
+      "military": 0.2023,
+      "nature": 0.2319,
+      "group": 0.2303,
+      "solo": 0.2063
+    }
+  },
+  {
+    "id": 370,
+    "file": "ppdt_0370.jpg",
+    "page": 386,
+    "width": 960,
+    "height": 820,
+    "category": "group",
+    "scores": {
+      "rural": 0.2282,
+      "urban": 0.2013,
+      "military": 0.2391,
+      "nature": 0.2182,
+      "group": 0.2412,
+      "solo": 0.2251
+    }
+  },
+  {
+    "id": 371,
+    "file": "ppdt_0371.jpg",
+    "page": 387,
+    "width": 960,
+    "height": 812,
+    "category": "solo",
+    "scores": {
+      "rural": 0.195,
+      "urban": 0.1899,
+      "military": 0.1745,
+      "nature": 0.1821,
+      "group": 0.2051,
+      "solo": 0.2393
+    }
+  },
+  {
+    "id": 372,
+    "file": "ppdt_0372.jpg",
+    "page": 388,
+    "width": 834,
+    "height": 782,
+    "category": "group",
+    "scores": {
+      "rural": 0.1702,
+      "urban": 0.1712,
+      "military": 0.1958,
+      "nature": 0.1862,
+      "group": 0.2343,
+      "solo": 0.2333
+    }
+  },
+  {
+    "id": 373,
+    "file": "ppdt_0373.jpg",
+    "page": 389,
+    "width": 960,
+    "height": 755,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1471,
+      "urban": 0.1709,
+      "military": 0.1902,
+      "nature": 0.1862,
+      "group": 0.2018,
+      "solo": 0.2162
+    }
+  },
+  {
+    "id": 374,
+    "file": "ppdt_0374.jpg",
+    "page": 390,
+    "width": 960,
+    "height": 736,
+    "category": "group",
+    "scores": {
+      "rural": 0.1435,
+      "urban": 0.1933,
+      "military": 0.2035,
+      "nature": 0.1688,
+      "group": 0.2312,
+      "solo": 0.2134
+    }
+  },
+  {
+    "id": 375,
+    "file": "ppdt_0375.jpg",
+    "page": 391,
+    "width": 1280,
+    "height": 894,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2262,
+      "urban": 0.1771,
+      "military": 0.2112,
+      "nature": 0.2187,
+      "group": 0.2149,
+      "solo": 0.2089
+    }
+  },
+  {
+    "id": 376,
+    "file": "ppdt_0376.jpg",
+    "page": 392,
+    "width": 534,
+    "height": 582,
+    "category": "group",
+    "scores": {
+      "rural": 0.2213,
+      "urban": 0.2006,
+      "military": 0.2101,
+      "nature": 0.2232,
+      "group": 0.2245,
+      "solo": 0.2079
+    }
+  },
+  {
+    "id": 377,
+    "file": "ppdt_0377.jpg",
+    "page": 393,
+    "width": 960,
+    "height": 776,
+    "category": "group",
+    "scores": {
+      "rural": 0.1757,
+      "urban": 0.1921,
+      "military": 0.1713,
+      "nature": 0.1783,
+      "group": 0.2508,
+      "solo": 0.213
+    }
+  },
+  {
+    "id": 378,
+    "file": "ppdt_0378.jpg",
+    "page": 394,
+    "width": 960,
+    "height": 807,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1856,
+      "urban": 0.1898,
+      "military": 0.1754,
+      "nature": 0.1784,
+      "group": 0.2058,
+      "solo": 0.2244
+    }
+  },
+  {
+    "id": 379,
+    "file": "ppdt_0379.jpg",
+    "page": 395,
+    "width": 1080,
+    "height": 591,
+    "category": "group",
+    "scores": {
+      "rural": 0.1745,
+      "urban": 0.2007,
+      "military": 0.1976,
+      "nature": 0.1846,
+      "group": 0.2354,
+      "solo": 0.2222
+    }
+  },
+  {
+    "id": 380,
+    "file": "ppdt_0380.jpg",
+    "page": 396,
+    "width": 960,
+    "height": 762,
+    "category": "group",
+    "scores": {
+      "rural": 0.1902,
+      "urban": 0.1989,
+      "military": 0.1944,
+      "nature": 0.1832,
+      "group": 0.2661,
+      "solo": 0.2197
+    }
+  },
+  {
+    "id": 381,
+    "file": "ppdt_0381.jpg",
+    "page": 397,
+    "width": 960,
+    "height": 683,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2425,
+      "urban": 0.2101,
+      "military": 0.1938,
+      "nature": 0.2184,
+      "group": 0.2104,
+      "solo": 0.2173
+    }
+  },
+  {
+    "id": 382,
+    "file": "ppdt_0382.jpg",
+    "page": 398,
+    "width": 960,
+    "height": 731,
+    "category": "group",
+    "scores": {
+      "rural": 0.2051,
+      "urban": 0.2074,
+      "military": 0.2008,
+      "nature": 0.1812,
+      "group": 0.2331,
+      "solo": 0.2258
+    }
+  },
+  {
+    "id": 383,
+    "file": "ppdt_0383.jpg",
+    "page": 399,
+    "width": 960,
+    "height": 731,
+    "category": "group",
+    "scores": {
+      "rural": 0.1676,
+      "urban": 0.203,
+      "military": 0.1978,
+      "nature": 0.1843,
+      "group": 0.2318,
+      "solo": 0.2242
+    }
+  },
+  {
+    "id": 384,
+    "file": "ppdt_0384.jpg",
+    "page": 400,
+    "width": 800,
+    "height": 480,
+    "category": "nature",
+    "scores": {
+      "rural": 0.2128,
+      "urban": 0.2002,
+      "military": 0.1971,
+      "nature": 0.23,
+      "group": 0.2122,
+      "solo": 0.2236
+    }
+  },
+  {
+    "id": 385,
+    "file": "ppdt_0385.jpg",
+    "page": 401,
+    "width": 783,
+    "height": 572,
+    "category": "group",
+    "scores": {
+      "rural": 0.2055,
+      "urban": 0.2041,
+      "military": 0.2008,
+      "nature": 0.2213,
+      "group": 0.2501,
+      "solo": 0.2256
+    }
+  },
+  {
+    "id": 386,
+    "file": "ppdt_0386.jpg",
+    "page": 402,
+    "width": 960,
+    "height": 725,
+    "category": "group",
+    "scores": {
+      "rural": 0.1604,
+      "urban": 0.2084,
+      "military": 0.1933,
+      "nature": 0.1863,
+      "group": 0.2398,
+      "solo": 0.2141
+    }
+  },
+  {
+    "id": 387,
+    "file": "ppdt_0387.jpg",
+    "page": 403,
+    "width": 960,
+    "height": 734,
+    "category": "group",
+    "scores": {
+      "rural": 0.1754,
+      "urban": 0.2082,
+      "military": 0.2091,
+      "nature": 0.1861,
+      "group": 0.2434,
+      "solo": 0.1936
+    }
+  },
+  {
+    "id": 388,
+    "file": "ppdt_0388.jpg",
+    "page": 404,
+    "width": 536,
+    "height": 396,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1905,
+      "urban": 0.1902,
+      "military": 0.1985,
+      "nature": 0.2139,
+      "group": 0.2101,
+      "solo": 0.215
+    }
+  },
+  {
+    "id": 389,
+    "file": "ppdt_0389.jpg",
+    "page": 405,
+    "width": 960,
+    "height": 683,
+    "category": "group",
+    "scores": {
+      "rural": 0.2099,
+      "urban": 0.1896,
+      "military": 0.212,
+      "nature": 0.2116,
+      "group": 0.2223,
+      "solo": 0.2173
+    }
+  },
+  {
+    "id": 390,
+    "file": "ppdt_0390.jpg",
+    "page": 406,
+    "width": 960,
+    "height": 804,
+    "category": "group",
+    "scores": {
+      "rural": 0.1979,
+      "urban": 0.2187,
+      "military": 0.1877,
+      "nature": 0.194,
+      "group": 0.229,
+      "solo": 0.2153
+    }
+  },
+  {
+    "id": 391,
+    "file": "ppdt_0391.jpg",
+    "page": 407,
+    "width": 960,
+    "height": 764,
+    "category": "group",
+    "scores": {
+      "rural": 0.2241,
+      "urban": 0.2072,
+      "military": 0.2078,
+      "nature": 0.1954,
+      "group": 0.2384,
+      "solo": 0.2193
+    }
+  },
+  {
+    "id": 392,
+    "file": "ppdt_0392.jpg",
+    "page": 408,
+    "width": 960,
+    "height": 771,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2344,
+      "urban": 0.1832,
+      "military": 0.1912,
+      "nature": 0.2246,
+      "group": 0.2091,
+      "solo": 0.2385
+    }
+  },
+  {
+    "id": 393,
+    "file": "ppdt_0393.jpg",
+    "page": 409,
+    "width": 960,
+    "height": 738,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2399,
+      "urban": 0.1857,
+      "military": 0.2165,
+      "nature": 0.2324,
+      "group": 0.2011,
+      "solo": 0.2304
+    }
+  },
+  {
+    "id": 394,
+    "file": "ppdt_0394.jpg",
+    "page": 410,
+    "width": 960,
+    "height": 676,
+    "category": "solo",
+    "scores": {
+      "rural": 0.214,
+      "urban": 0.1795,
+      "military": 0.1922,
+      "nature": 0.2083,
+      "group": 0.2034,
+      "solo": 0.2308
+    }
+  },
+  {
+    "id": 395,
+    "file": "ppdt_0395.jpg",
+    "page": 411,
+    "width": 960,
+    "height": 700,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2641,
+      "urban": 0.1998,
+      "military": 0.2121,
+      "nature": 0.1985,
+      "group": 0.2079,
+      "solo": 0.2158
+    }
+  },
+  {
+    "id": 396,
+    "file": "ppdt_0396.jpg",
+    "page": 412,
+    "width": 1050,
+    "height": 789,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2325,
+      "urban": 0.2107,
+      "military": 0.2058,
+      "nature": 0.2037,
+      "group": 0.2173,
+      "solo": 0.2027
+    }
+  },
+  {
+    "id": 397,
+    "file": "ppdt_0397.jpg",
+    "page": 413,
+    "width": 1280,
+    "height": 720,
+    "category": "group",
+    "scores": {
+      "rural": 0.2085,
+      "urban": 0.199,
+      "military": 0.2085,
+      "nature": 0.2149,
+      "group": 0.2596,
+      "solo": 0.2229
+    }
+  },
+  {
+    "id": 398,
+    "file": "ppdt_0398.jpg",
+    "page": 414,
+    "width": 867,
+    "height": 636,
+    "category": "group",
+    "scores": {
+      "rural": 0.161,
+      "urban": 0.1936,
+      "military": 0.193,
+      "nature": 0.1812,
+      "group": 0.2297,
+      "solo": 0.2235
+    }
+  },
+  {
+    "id": 399,
+    "file": "ppdt_0399.jpg",
+    "page": 415,
+    "width": 960,
+    "height": 793,
+    "category": "urban",
+    "scores": {
+      "rural": 0.2099,
+      "urban": 0.2409,
+      "military": 0.2184,
+      "nature": 0.1846,
+      "group": 0.2363,
+      "solo": 0.2129
+    }
+  },
+  {
+    "id": 400,
+    "file": "ppdt_0400.jpg",
+    "page": 416,
+    "width": 917,
+    "height": 723,
+    "category": "group",
+    "scores": {
+      "rural": 0.1608,
+      "urban": 0.1967,
+      "military": 0.1992,
+      "nature": 0.1691,
+      "group": 0.2206,
+      "solo": 0.2112
+    }
+  },
+  {
+    "id": 401,
+    "file": "ppdt_0401.jpg",
+    "page": 417,
+    "width": 960,
+    "height": 713,
+    "category": "solo",
+    "scores": {
+      "rural": 0.1864,
+      "urban": 0.1941,
+      "military": 0.1954,
+      "nature": 0.1936,
+      "group": 0.1887,
+      "solo": 0.2347
+    }
+  },
+  {
+    "id": 402,
+    "file": "ppdt_0402.jpg",
+    "page": 418,
+    "width": 960,
+    "height": 762,
+    "category": "group",
+    "scores": {
+      "rural": 0.2139,
+      "urban": 0.2079,
+      "military": 0.2093,
+      "nature": 0.2192,
+      "group": 0.2329,
+      "solo": 0.2239
+    }
+  },
+  {
+    "id": 403,
+    "file": "ppdt_0403.jpg",
+    "page": 419,
+    "width": 960,
+    "height": 781,
+    "category": "group",
+    "scores": {
+      "rural": 0.1732,
+      "urban": 0.2123,
+      "military": 0.1794,
+      "nature": 0.1859,
+      "group": 0.2303,
+      "solo": 0.2076
+    }
+  },
+  {
+    "id": 404,
+    "file": "ppdt_0404.jpg",
+    "page": 420,
+    "width": 960,
+    "height": 717,
+    "category": "group",
+    "scores": {
+      "rural": 0.1899,
+      "urban": 0.2284,
+      "military": 0.2139,
+      "nature": 0.1902,
+      "group": 0.2601,
+      "solo": 0.2176
+    }
+  },
+  {
+    "id": 405,
+    "file": "ppdt_0405.jpg",
+    "page": 421,
+    "width": 960,
+    "height": 742,
+    "category": "group",
+    "scores": {
+      "rural": 0.2331,
+      "urban": 0.2062,
+      "military": 0.2061,
+      "nature": 0.218,
+      "group": 0.2342,
+      "solo": 0.2158
+    }
+  },
+  {
+    "id": 406,
+    "file": "ppdt_0406.jpg",
+    "page": 422,
+    "width": 960,
+    "height": 719,
+    "category": "group",
+    "scores": {
+      "rural": 0.1585,
+      "urban": 0.1933,
+      "military": 0.1797,
+      "nature": 0.1734,
+      "group": 0.2399,
+      "solo": 0.2335
+    }
+  },
+  {
+    "id": 407,
+    "file": "ppdt_0407.jpg",
+    "page": 423,
+    "width": 1024,
+    "height": 748,
+    "category": "solo",
+    "scores": {
+      "rural": 0.2261,
+      "urban": 0.1875,
+      "military": 0.2067,
+      "nature": 0.217,
+      "group": 0.2023,
+      "solo": 0.2381
+    }
+  },
+  {
+    "id": 408,
+    "file": "ppdt_0408.jpg",
+    "page": 424,
+    "width": 681,
+    "height": 450,
+    "category": "military",
+    "scores": {
+      "rural": 0.2404,
+      "urban": 0.2027,
+      "military": 0.2454,
+      "nature": 0.2023,
+      "group": 0.2348,
+      "solo": 0.2016
+    }
+  },
+  {
+    "id": 409,
+    "file": "ppdt_0409.jpg",
+    "page": 425,
+    "width": 881,
+    "height": 640,
+    "category": "group",
+    "scores": {
+      "rural": 0.1762,
+      "urban": 0.1991,
+      "military": 0.1843,
+      "nature": 0.1803,
+      "group": 0.2674,
+      "solo": 0.2201
+    }
+  },
+  {
+    "id": 410,
+    "file": "ppdt_0410.jpg",
+    "page": 426,
+    "width": 771,
+    "height": 660,
+    "category": "rural",
+    "scores": {
+      "rural": 0.2457,
+      "urban": 0.2195,
+      "military": 0.2146,
+      "nature": 0.1939,
+      "group": 0.2121,
+      "solo": 0.2176
+    }
+  }
+]
