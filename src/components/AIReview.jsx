@@ -13,10 +13,15 @@ function fileToBase64(file) {
   });
 }
 
-export default function AIReview({ initialBlob = null }) {
+export default function AIReview({ initialBlob = null, initialImageUrl = null }) {
   const fileRef = useRef(null);
-  const [preview, setPreview] = useState(() => initialBlob ? URL.createObjectURL(initialBlob) : null);
+  const [preview, setPreview] = useState(() => {
+    if (initialBlob) return URL.createObjectURL(initialBlob);
+    if (initialImageUrl) return initialImageUrl;
+    return null;
+  });
   const [file, setFile] = useState(initialBlob || null);
+  const [imageUrl, setImageUrl] = useState(initialImageUrl || null);
   const [mode, setMode] = useState('image'); // image | text
   const [manualText, setManualText] = useState('');
   const [stage, setStage] = useState('idle'); // idle | sending | done | error
@@ -38,9 +43,17 @@ export default function AIReview({ initialBlob = null }) {
     setError(null);
     try {
       let body;
-      if (mode === 'image' && file) {
-        const { base64, mimeType } = await fileToBase64(file);
-        body = { image: base64, mimeType };
+      if (mode === 'image' && (file || imageUrl)) {
+        if (file) {
+          const { base64, mimeType } = await fileToBase64(file);
+          body = { image: base64, mimeType };
+        } else {
+          // Fetch the URL and convert to base64
+          const resp = await fetch(imageUrl);
+          const blob = await resp.blob();
+          const { base64, mimeType } = await fileToBase64(blob);
+          body = { image: base64, mimeType };
+        }
       } else {
         body = { story: manualText };
       }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { AuthProvider, useAuth } from './lib/auth.jsx';
 import usePhase, { PHASES } from './hooks/usePhase.js';
+import LoginScreen from './components/LoginScreen.jsx';
 import CategorySelect from './components/CategorySelect.jsx';
 import PicturePhase from './components/PicturePhase.jsx';
 import TimerPhase from './components/TimerPhase.jsx';
@@ -7,10 +9,21 @@ import DoneScreen from './components/DoneScreen.jsx';
 import MyAttempts from './components/MyAttempts.jsx';
 import ProgressBar from './components/ProgressBar.jsx';
 
-export default function App() {
+function AppInner() {
+  const { user, loading, signOut } = useAuth();
   const { phase, goTo, reset } = usePhase();
   const [session, setSession] = useState(null);
   const [lastSceneId, setLastSceneId] = useState(null);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-slate-500 animate-pulse">Loading…</div>
+      </div>
+    );
+  }
+
+  if (!user) return <LoginScreen />;
 
   const start = (s) => {
     setSession(s);
@@ -22,6 +35,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
+      {/* User header */}
+      {phase === PHASES.IDLE && (
+        <div className="max-w-5xl mx-auto px-6 pt-4 flex items-center justify-end gap-3 text-xs text-slate-400">
+          <span>{user.email}</span>
+          <button onClick={signOut} className="hover:text-slate-200">Sign out</button>
+        </div>
+      )}
+
       {showProgress && <ProgressBar phase={phase} />}
 
       {phase === PHASES.IDLE && (
@@ -37,11 +58,7 @@ export default function App() {
       )}
 
       {phase === PHASES.PICTURE && session && (
-        <PicturePhase
-          session={session}
-          onDone={() => goTo(PHASES.CHARACTER)}
-          onCancel={reset}
-        />
+        <PicturePhase session={session} onDone={() => goTo(PHASES.CHARACTER)} onCancel={reset} />
       )}
 
       {phase === PHASES.CHARACTER && session && (
@@ -89,5 +106,13 @@ export default function App() {
         />
       )}
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <AppInner />
+    </AuthProvider>
   );
 }
