@@ -1,66 +1,54 @@
 import React, { useRef, useState } from 'react';
-import { createWorker } from 'tesseract.js';
 
-const MIN_CHARS = 20;
-
-export default function AIReview({ initialFile = null, initialBlob = null }) {
-  const fileRef = useRef(null);
-  const [preview, setPreview] = useState(() => {
-    if (initialBlob) return URL.createObjectURL(initialBlob);
-    if (initialFile) return URL.createObjectURL(initialFile);
-    return null;
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const dataUrl = reader.result;
+      const base64 = dataUrl.split(',')[1];
+      resolve({ base64, mimeType: file.type || 'image/jpeg' });
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
   });
-  const [stage, setStage] = useState('idle'); // idle | ocr | review | done | error
-  const [progress, setProgress] = useState(0);
-  const [text, setText] = useState('');
+}
+
+export default function AIReview({ initialBlob = null }) {
+  const fileRef = useRef(null);
+  const [preview, setPreview] = useState(() => initialBlob ? URL.createObjectURL(initialBlob) : null);
+  const [file, setFile] = useState(initialBlob || null);
+  const [mode, setMode] = useState('image'); // image | text
+  const [manualText, setManualText] = useState('');
+  const [stage, setStage] = useState('idle'); // idle | sending | done | error
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
 
-  const pickFile = (f) => {
-    setPreview(URL.createObjectURL(f));
-    setStage('idle');
-    setText('');
-    setResult(null);
-    setError(null);
-    runOcr(f);
-  };
-
   const onFileInput = (e) => {
     const f = e.target.files?.[0];
-    if (f) pickFile(f);
+    if (!f) return;
+    setFile(f);
+    setPreview(URL.createObjectURL(f));
+    setResult(null);
+    setError(null);
+    setStage('idle');
   };
 
-  const runOcr = async (source) => {
-    setStage('ocr');
-    setProgress(0);
-    try {
-      const worker = await createWorker('eng', 1, {
-        logger: (m) => {
-          if (m.status === 'recognizing text') setProgress(Math.round(m.progress * 100));
-        },
-      });
-      const { data } = await worker.recognize(source);
-      await worker.terminate();
-      setText(data.text.trim());
-      setStage('edit');
-    } catch (e) {
-      setError(String(e));
-      setStage('error');
-    }
-  };
-
-  const runReview = async () => {
-    if (text.trim().length < MIN_CHARS) {
-      setError(`Need at least ${MIN_CHARS} characters of story text.`);
-      return;
-    }
-    setStage('review');
+  const submit = async () => {
+    setStage('sending');
     setError(null);
     try {
+      let body;
+      if (mode === 'image' && file) {
+        const { base64, mimeType } = await fileToBase64(file);
+        body = { image: base64, mimeType };
+      } else {
+        body = { story: manualText };
+      }
+
       const res = await fetch('/api/review', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ story: text }),
+        body: JSON.stringify(body),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
@@ -72,79 +60,86 @@ export default function AIReview({ initialFile = null, initialBlob = null }) {
     }
   };
 
-  // Auto-start OCR if we were passed a blob
-  React.useEffect(() => {
-    if (initialBlob && stage === 'idle') runOcr(initialBlob);
-    else if (initialFile && stage === 'idle') runOcr(initialFile);
-
-  }, []);
-
   return (
     <div className="w-full max-w-2xl mx-auto p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
       <div>
         <div className="font-semibold text-lg">AI story review</div>
         <p className="text-xs text-slate-400 mt-0.5">
-          Upload a photo of your handwritten story. We extract the text in your browser and send only the text to Gemini for SSB-style feedback.
+          Upload a photo of your handwritten story — Gemini reads the handwriting directly and gives SSB-style feedback.
         </p>
+      </div>
+
+      <div className="flex rounded-lg bg-slate-950 border border-slate-800 p-1 text-xs">
+        <button
+          onClick={() => setMode('image')}
+          className={`flex-1 px-3 py-1.5 rounded-md transition ${mode === 'image' ? 'bg-slate-800 text-slate-100' : 'text-slate-400'}`}
+        >
+          📷 Photo of story
+        </button>
+        <button
+          onClick={() => setMode('text')}
+          className={`flex-1 px-3 py-1.5 rounded-md transition ${mode === 'text' ? 'bg-slate-800 text-slate-100' : 'text-slate-400'}`}
+        >
+          ⌨️ Type story
+        </button>
       </div>
 
       <input ref={fileRef} type="file" accept="image/*" capture="environment" onChange={onFileInput} className="hidden" />
 
-      {!preview ? (
-        <button
-          onClick={() => fileRef.current?.click()}
-          className="w-full p-6 rounded-lg border-2 border-dashed border-slate-700 hover:border-emerald-500 text-slate-400 hover:text-emerald-300 text-sm"
-        >
-          📷 Upload photo of your story
-        </button>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4">
-          <div className="rounded-lg overflow-hidden border border-slate-800 bg-black">
-            <img src={preview} alt="" className="w-full object-cover" />
-          </div>
+      {mode === 'image' ? (
+        preview ? (
           <div className="space-y-2">
-            {stage === 'ocr' && (
-              <div className="text-sm text-slate-300">
-                <div>Extracting text… {progress}%</div>
-                <div className="mt-1 h-1.5 bg-slate-800 rounded overflow-hidden">
-                  <div className="h-full bg-emerald-500 transition-all" style={{ width: `${progress}%` }} />
-                </div>
-              </div>
-            )}
-            {(stage === 'edit' || stage === 'review' || stage === 'done') && (
-              <>
-                <label className="text-xs text-slate-400">Extracted text (fix typos if needed)</label>
-                <textarea
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
-                  rows={6}
-                  className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-sm focus:border-emerald-500 focus:outline-none"
-                />
-                <div className="flex items-center justify-between text-xs text-slate-500">
-                  <span>{text.trim() ? text.trim().split(/\s+/).length : 0} words</span>
-                  <button
-                    onClick={() => fileRef.current?.click()}
-                    className="text-slate-400 hover:text-slate-200"
-                  >
-                    Re-upload
-                  </button>
-                </div>
-                <button
-                  onClick={runReview}
-                  disabled={stage === 'review' || text.trim().length < MIN_CHARS}
-                  className="w-full mt-2 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-slate-950 font-semibold text-sm"
-                >
-                  {stage === 'review' ? 'Analyzing…' : stage === 'done' ? 'Re-analyze' : '✨ Get AI feedback'}
-                </button>
-              </>
-            )}
+            <div className="relative rounded-lg overflow-hidden border border-slate-800 bg-black">
+              <img src={preview} alt="preview" className="w-full max-h-72 object-contain" />
+              <button
+                onClick={() => fileRef.current?.click()}
+                className="absolute top-2 right-2 px-2 py-1 rounded bg-black/70 text-xs hover:bg-black"
+              >
+                Replace
+              </button>
+            </div>
+            <button
+              onClick={submit}
+              disabled={stage === 'sending'}
+              className="w-full px-4 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-slate-950 font-semibold text-sm"
+            >
+              {stage === 'sending' ? 'Gemini is reading & analyzing…' : stage === 'done' ? '✨ Re-analyze' : '✨ Get AI feedback'}
+            </button>
           </div>
+        ) : (
+          <button
+            onClick={() => fileRef.current?.click()}
+            className="w-full p-8 rounded-lg border-2 border-dashed border-slate-700 hover:border-emerald-500 text-slate-400 hover:text-emerald-300 text-sm"
+          >
+            📷 Take / choose photo of your handwritten story
+          </button>
+        )
+      ) : (
+        <div className="space-y-2">
+          <textarea
+            value={manualText}
+            onChange={(e) => setManualText(e.target.value)}
+            rows={6}
+            placeholder="Type or paste your story here…"
+            className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-sm focus:border-emerald-500 focus:outline-none"
+          />
+          <div className="text-xs text-slate-500 text-right">
+            {manualText.trim() ? manualText.trim().split(/\s+/).length : 0} words
+          </div>
+          <button
+            onClick={submit}
+            disabled={stage === 'sending' || manualText.trim().length < 20}
+            className="w-full px-4 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-slate-950 font-semibold text-sm"
+          >
+            {stage === 'sending' ? 'Analyzing…' : stage === 'done' ? '✨ Re-analyze' : '✨ Get AI feedback'}
+          </button>
         </div>
       )}
 
       {error && (
         <div className="p-3 rounded-lg bg-red-950/50 border border-red-900 text-sm text-red-300">
           {error}
+          <button onClick={submit} className="ml-2 underline hover:text-red-200">Retry</button>
         </div>
       )}
 
@@ -155,7 +150,7 @@ export default function AIReview({ initialFile = null, initialBlob = null }) {
 
 function ReviewResult({ result }) {
   const {
-    overall_score, word_count, structural_check,
+    transcribed_text, overall_score, word_count, structural_check,
     strengths, weaknesses, olqs_demonstrated, olqs_missing,
     suggested_rewrite, verdict,
   } = result;
@@ -174,6 +169,13 @@ function ReviewResult({ result }) {
         </div>
         <div className="text-sm text-slate-300 flex-1">{verdict}</div>
       </div>
+
+      {transcribed_text && (
+        <div className="p-3 rounded-lg bg-slate-950 border border-slate-800">
+          <div className="text-xs uppercase tracking-widest text-slate-500 mb-1.5">What Gemini read from your handwriting</div>
+          <p className="text-sm text-slate-200 leading-relaxed whitespace-pre-wrap">{transcribed_text}</p>
+        </div>
+      )}
 
       <Checklist check={structural_check} wordCount={word_count} />
 

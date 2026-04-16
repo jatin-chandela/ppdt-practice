@@ -4,6 +4,7 @@ const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODE
 const RESPONSE_SCHEMA = {
   type: 'object',
   properties: {
+    transcribed_text: { type: 'string' },
     overall_score: { type: 'integer', minimum: 0, maximum: 10 },
     word_count: { type: 'integer' },
     structural_check: {
@@ -25,7 +26,7 @@ const RESPONSE_SCHEMA = {
     verdict: { type: 'string' },
   },
   required: [
-    'overall_score', 'word_count', 'structural_check',
+    'transcribed_text', 'overall_score', 'word_count', 'structural_check',
     'strengths', 'weaknesses', 'olqs_demonstrated', 'olqs_missing',
     'suggested_rewrite', 'verdict',
   ],
@@ -33,7 +34,9 @@ const RESPONSE_SCHEMA = {
 
 const SYSTEM_PROMPT = `You are an experienced SSB (Services Selection Board) GTO/psychologist assessor evaluating a candidate's PPDT story.
 
-Grade rigorously against SSB standards:
+STEP 1: If an image is provided, carefully read ALL the handwritten text in the image. Transcribe it faithfully into transcribed_text — preserve the candidate's exact words, fix only unreadable characters. If text is provided directly instead of an image, use that as transcribed_text.
+
+STEP 2: Evaluate the transcribed story against SSB standards:
 - Ideal length: 80–110 words. Too short (<60) or too long (>130) is a weakness.
 - Must name the hero with a specific age.
 - Must have Past → Present → Future structure.
@@ -54,9 +57,8 @@ For strengths and weaknesses, be specific and quote from the story where useful.
 For suggested_rewrite, produce a 90-word improved version that fixes the weaknesses while preserving the candidate's core idea.
 For verdict, give one punchy sentence on whether this would likely screen-in or screen-out.`;
 
-function userPrompt(story) {
-  return `Evaluate this PPDT story (text extracted from the candidate's handwritten paper — minor OCR errors are possible, ignore obvious typos):\n\n"""\n${story}\n"""`;
-}
+const IMAGE_PROMPT = 'Read the handwritten story in this image and evaluate it as an SSB PPDT story.';
+const TEXT_PROMPT = (story) => `Evaluate this PPDT story:\n\n"""\n${story}\n"""`;
 
 export default async (req) => {
   if (req.method !== 'POST') {
@@ -75,17 +77,25 @@ export default async (req) => {
     return Response.json({ error: 'Invalid JSON body.' }, { status: 400 });
   }
 
-  const story = (body.story || '').trim();
-  if (story.length < 20) {
-    return Response.json({ error: 'Story text too short to evaluate (min 20 chars).' }, { status: 400 });
+  const hasImage = body.image && body.mimeType;
+  const hasText = (body.story || '').trim().length >= 20;
+
+  if (!hasImage && !hasText) {
+    return Response.json({ error: 'Provide an image (base64) or story text (min 20 chars).' }, { status: 400 });
   }
-  if (story.length > 5000) {
-    return Response.json({ error: 'Story text too long (max 5000 chars).' }, { status: 400 });
+
+  // Build the user content parts
+  const parts = [];
+  if (hasImage) {
+    parts.push({ inline_data: { mime_type: body.mimeType, data: body.image } });
+    parts.push({ text: IMAGE_PROMPT });
+  } else {
+    parts.push({ text: TEXT_PROMPT(body.story.trim()) });
   }
 
   const payload = {
     system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-    contents: [{ role: 'user', parts: [{ text: userPrompt(story) }] }],
+    contents: [{ role: 'user', parts }],
     generationConfig: {
       temperature: 0.3,
       responseMimeType: 'application/json',
