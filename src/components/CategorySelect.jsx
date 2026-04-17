@@ -10,82 +10,90 @@ export default function CategorySelect({ onStart, lastSceneId, onOpenAttempts })
   const goRandom = () => startWith(randomScene(catId, lastSceneId ? [lastSceneId] : []));
 
   const filtered = pool(catId);
+  const activeCat = categories.find((c) => c.id === catId);
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10">
-      <div className="mb-8 flex items-start justify-between gap-4">
+    <div className="max-w-5xl mx-auto px-6 py-16 animate-fade-up">
+      <header className="mb-14 flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold">PPDT Practice</h1>
-          <p className="text-slate-400 mt-1">
-            SSB Screening simulator — {counts.all} local practice images. Write on paper; the app runs the timers.
+          <div className="text-[11px] uppercase tracking-widest text-bone-500 mb-3">SSB Screening · Practice</div>
+          <h1 className="font-display text-6xl md:text-7xl font-normal text-bone-50 leading-none">
+            Picture <span className="italic text-gold-300">Perception</span>
+          </h1>
+          <p className="text-bone-400 mt-5 max-w-lg leading-relaxed">
+            A quiet simulator for the PPDT. {counts.all} local images, timed the way the board does it. Write on paper — the app keeps time.
           </p>
         </div>
         <button
           onClick={onOpenAttempts}
-          className="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm whitespace-nowrap"
+          className="shrink-0 px-4 py-2 text-xs uppercase tracking-widest text-bone-400 hover:text-bone-100 border border-white/10 hover:border-white/20 rounded-md transition"
         >
-          📸 My Attempts
+          My attempts
         </button>
-      </div>
+      </header>
 
-      <div className="mb-6 p-4 rounded-lg border border-slate-800 bg-slate-900/60 text-sm text-slate-300 leading-relaxed">
-        <div className="font-semibold text-slate-100 mb-1">How it works</div>
-        <ol className="list-decimal list-inside space-y-0.5">
-          <li><span className="text-emerald-400 font-semibold">30s</span> — observe the picture.</li>
-          <li><span className="text-emerald-400 font-semibold">1 min</span> — note characters, age, sex, mood, action on paper.</li>
-          <li><span className="text-emerald-400 font-semibold">4 min</span> — write the story on paper (past → present → future).</li>
+      <section className="mb-14 border-t border-white/5 pt-8">
+        <div className="text-[11px] uppercase tracking-widest text-bone-500 mb-5">The three phases</div>
+        <ol className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+          <Phase n="01" time="30 s" title="Observe" desc="Study the picture. Count characters, read mood, catch the central action." />
+          <Phase n="02" time="1 min" title="Note" desc="Jot characters, age, sex, mood, and the action on paper." />
+          <Phase n="03" time="4 min" title="Write" desc="Compose a story — past, present, a concrete future." />
         </ol>
-      </div>
+      </section>
 
-      <h2 className="text-lg font-semibold mb-3">Choose a category</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 mb-6">
-        {categories.map((c) => {
-          const active = catId === c.id;
-          return (
-            <button
-              key={c.id}
-              onClick={() => setCatId(c.id)}
-              className={`p-3 rounded-xl border text-left transition ${
-                active
-                  ? 'bg-emerald-500/15 border-emerald-400 text-emerald-100'
-                  : 'bg-slate-900 border-slate-800 hover:border-slate-600'
-              }`}
-            >
-              <div className="text-xl">{c.emoji}</div>
-              <div className="text-sm font-medium mt-1">{c.label}</div>
-              <div className="text-xs text-slate-500">{counts[c.id] || 0} images</div>
-            </button>
-          );
-        })}
-      </div>
+      <section className="mb-10">
+        <div className="flex items-baseline justify-between mb-5">
+          <h2 className="font-display text-2xl text-bone-100">Choose a category</h2>
+          <span className="text-xs text-bone-500">{filtered.length} in {activeCat.label.toLowerCase()}</span>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
+          {categories.map((c) => {
+            const active = catId === c.id;
+            return (
+              <button
+                key={c.id}
+                onClick={() => setCatId(c.id)}
+                className={`p-4 rounded-md border text-left transition ${
+                  active
+                    ? 'bg-gold-400/10 border-gold-400/40 text-bone-50'
+                    : 'bg-transparent border-white/5 hover:border-white/15 text-bone-300'
+                }`}
+              >
+                <div className="text-sm font-medium">{c.label}</div>
+                <div className="text-[11px] text-bone-500 mt-1">{counts[c.id] || 0} images</div>
+              </button>
+            );
+          })}
+        </div>
+      </section>
 
-      <div className="flex flex-wrap gap-3 mb-4">
+      <div className="flex flex-wrap gap-3 items-center">
         <button
           onClick={goRandom}
           disabled={filtered.length === 0}
-          className="px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-slate-950 font-semibold"
+          className="px-6 py-3 rounded-md bg-gold-400 hover:bg-gold-300 disabled:opacity-40 text-ink-950 font-medium text-sm transition"
         >
-          🎲 Random from {categories.find((c) => c.id === catId).label} ({filtered.length})
+          Begin — random from {activeCat.label}
         </button>
         <button
           onClick={() => setBrowsing((v) => !v)}
-          className="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700"
+          className="px-5 py-3 rounded-md border border-white/10 hover:border-white/20 text-sm text-bone-300 hover:text-bone-100 transition"
         >
-          {browsing ? 'Hide' : 'Browse thumbnails'}
+          {browsing ? 'Hide thumbnails' : 'Browse thumbnails'}
         </button>
       </div>
 
       {browsing && (
-        <div className="mt-4 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-9 gap-2">
+        <div className="mt-8 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-9 gap-2 animate-fade-in">
           {filtered.map((s) => (
             <button
               key={s.id}
               onClick={() => startWith(s)}
               title={`#${s.id} · ${s.category}`}
-              className="group relative aspect-square rounded-lg overflow-hidden bg-black border border-slate-800 hover:border-emerald-500"
+              className="group relative aspect-square rounded-md overflow-hidden bg-black border border-white/5 hover:border-gold-400/50 transition"
             >
-              <img src={s.url} alt="" loading="lazy" className="w-full h-full object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 px-1 py-0.5 text-[10px] bg-black/70 text-slate-200 opacity-0 group-hover:opacity-100">
+              <img src={s.url} alt="" loading="lazy" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition" />
+              <div className="absolute bottom-0 left-0 right-0 px-1.5 py-0.5 text-[10px] bg-black/80 text-bone-200 opacity-0 group-hover:opacity-100">
                 #{s.id}
               </div>
             </button>
@@ -93,5 +101,15 @@ export default function CategorySelect({ onStart, lastSceneId, onOpenAttempts })
         </div>
       )}
     </div>
+  );
+}
+
+function Phase({ n, time, title, desc }) {
+  return (
+    <li className="border-l border-white/10 pl-5">
+      <div className="font-mono text-xs text-gold-300 mb-1">{n} · {time}</div>
+      <div className="font-display text-xl text-bone-100 mb-1">{title}</div>
+      <div className="text-bone-400 text-sm leading-relaxed">{desc}</div>
+    </li>
   );
 }

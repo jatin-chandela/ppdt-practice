@@ -18,7 +18,7 @@ function AppInner() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-slate-500 animate-pulse">Loading…</div>
+        <div className="text-bone-500 animate-pulse text-sm uppercase tracking-widest">Loading</div>
       </div>
     );
   }
@@ -37,9 +37,9 @@ function AppInner() {
     <div className="min-h-screen">
       {/* User header */}
       {phase === PHASES.IDLE && (
-        <div className="max-w-5xl mx-auto px-6 pt-4 flex items-center justify-end gap-3 text-xs text-slate-400">
+        <div className="max-w-5xl mx-auto px-6 pt-5 flex items-center justify-end gap-4 text-[11px] uppercase tracking-widest text-bone-500">
           <span>{user.email}</span>
-          <button onClick={signOut} className="hover:text-slate-200">Sign out</button>
+          <button onClick={signOut} className="hover:text-bone-100 transition">Sign out</button>
         </div>
       )}
 
