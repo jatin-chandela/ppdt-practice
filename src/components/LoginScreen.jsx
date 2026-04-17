@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { supabase } from '../lib/supabase.js';
 
+function detectInAppBrowser() {
+  if (typeof navigator === 'undefined') return { inApp: false, isAndroid: false };
+  const ua = navigator.userAgent || '';
+  const inApp = /(WhatsApp|Instagram|FBAN|FBAV|Line\/|MiuiBrowser|; wv\))/i.test(ua);
+  const isAndroid = /Android/i.test(ua);
+  return { inApp, isAndroid };
+}
+
 export default function LoginScreen() {
+  const { inApp, isAndroid } = useMemo(detectInAppBrowser, []);
   const [mode, setMode] = useState('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -54,6 +63,22 @@ export default function LoginScreen() {
           <h1 className="text-2xl font-bold mt-1 text-ink-900">PPDT Practice</h1>
           <p className="text-ink-500 mt-1 text-sm">Sign in to save attempts.</p>
         </div>
+
+        {inApp && (
+          <div className="p-3 rounded-lg bg-olive-50 border border-olive-200 text-xs text-olive-800 space-y-2">
+            <div>
+              <strong>Google sign-in won't work in WhatsApp's browser.</strong> Either sign up with email below, or open this page in Chrome.
+            </div>
+            {isAndroid && (
+              <a
+                href={`intent://${window.location.host}${window.location.pathname}#Intent;scheme=https;package=com.android.chrome;end`}
+                className="inline-block px-3 py-1.5 rounded bg-olive-600 text-sand-50 font-medium"
+              >
+                Open in Chrome →
+              </a>
+            )}
+          </div>
+        )}
 
         <button
           onClick={handleGoogle}
