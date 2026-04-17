@@ -7,7 +7,17 @@ const DURATION = 30;
 export default function PicturePhase({ session, onDone, onCancel }) {
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
-  const { seconds } = useTimer(DURATION, { autoStart: true, onExpire: onDone });
+  const { seconds, resume } = useTimer(DURATION, { autoStart: false, onExpire: onDone });
+
+  const handleLoad = () => {
+    setLoaded(true);
+    resume();
+  };
+
+  const handleError = () => {
+    setFailed(true);
+    resume();
+  };
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center px-4 gap-5">
@@ -19,7 +29,7 @@ export default function PicturePhase({ session, onDone, onCancel }) {
       </button>
 
       <div className="text-xs uppercase tracking-widest text-olive-700 font-semibold">
-        Observe — Set #{session.scene.id}
+        {loaded ? `Observe — Set #${session.scene.id}` : 'Loading picture…'}
       </div>
 
       <div className="relative w-full max-w-3xl aspect-[4/3] bg-sand-100 rounded-xl overflow-hidden border border-sand-200">
@@ -36,8 +46,8 @@ export default function PicturePhase({ session, onDone, onCancel }) {
           <img
             src={session.scene.url}
             alt={`PPDT scene ${session.scene.id}`}
-            onLoad={() => setLoaded(true)}
-            onError={() => setFailed(true)}
+            onLoad={handleLoad}
+            onError={handleError}
             className={`w-full h-full object-contain bg-black transition-opacity duration-300 ${
               loaded ? 'opacity-100' : 'opacity-0'
             }`}

@@ -14,6 +14,15 @@ export default function CategorySelect({ onStart, lastSceneId, onOpenAttempts })
     getStats(user.id).then(setStats).catch(() => {});
   }, [user]);
 
+  useEffect(() => {
+    const p = pool(catId);
+    const shuffled = [...p].sort(() => Math.random() - 0.5).slice(0, 6);
+    shuffled.forEach((s) => {
+      const img = new Image();
+      img.src = s.url;
+    });
+  }, [catId]);
+
   const startWith = (scene) => onStart({ scene, startedAt: new Date().toISOString() });
   const goRandom = () => startWith(randomScene(catId, lastSceneId ? [lastSceneId] : []));
   const filtered = pool(catId);
