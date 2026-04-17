@@ -1,5 +1,6 @@
-const MODEL = 'gemini-2.5-flash';
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
+const MODELS = ['gemini-2.5-flash', 'gemini-2.5-flash-lite', 'gemini-flash-latest'];
+const endpointFor = (m) => `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const RESPONSE_SCHEMA = {
   type: 'object',
@@ -103,15 +104,28 @@ export default async (req) => {
     },
   };
 
-  const res = await fetch(`${ENDPOINT}?key=${apiKey}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
+  let res, lastStatus, lastDetail;
+  outer: for (const model of MODELS) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      res = await fetch(`${endpointFor(model)}?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) break outer;
+      lastStatus = res.status;
+      lastDetail = await res.text();
+      // Only retry on transient/overload errors; bail fast on auth/quota/bad-input errors
+      if (![429, 500, 502, 503, 504].includes(res.status)) break outer;
+      await sleep(800 * (attempt + 1));
+    }
+  }
 
-  if (!res.ok) {
-    const text = await res.text();
-    return Response.json({ error: `Gemini API error: ${res.status}`, detail: text.slice(0, 500) }, { status: 502 });
+  if (!res || !res.ok) {
+    const friendly = lastStatus === 503 || lastStatus === 429
+      ? 'Gemini is busy right now (free-tier high load). Please try again in 30 seconds.'
+      : `AI service error (${lastStatus || 'network'}). Please try again.`;
+    return Response.json({ error: friendly, detail: (lastDetail || '').slice(0, 300) }, { status: 503 });
   }
 
   const data = await res.json();
