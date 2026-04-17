@@ -13,7 +13,7 @@ export default function PicturePhase({ session, onDone, onCancel }) {
     <div className="relative min-h-screen flex flex-col items-center justify-center px-4 gap-6">
       <button
         onClick={onCancel}
-        className="absolute top-4 left-4 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm text-slate-200"
+        className="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm text-slate-200"
       >
         ← Back
       </button>
@@ -52,10 +52,10 @@ export default function PicturePhase({ session, onDone, onCancel }) {
       </div>
 
       <button
-        onClick={onCancel}
-        className="mt-2 px-6 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-base text-slate-200 transition-colors"
+        onClick={onDone}
+        className="mt-2 px-6 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-base text-white font-medium transition-colors"
       >
-        ← Navigate Back
+        Finish early → Next step
       </button>
     </div>
   );
