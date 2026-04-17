@@ -16,7 +16,7 @@ export default function CategorySelect({ onStart, lastSceneId, onOpenAttempts })
 
   useEffect(() => {
     const p = pool(catId);
-    const shuffled = [...p].sort(() => Math.random() - 0.5).slice(0, 6);
+    const shuffled = [...p].sort(() => Math.random() - 0.5).slice(0, 2);
     shuffled.forEach((s) => {
       const img = new Image();
       img.src = s.url;
