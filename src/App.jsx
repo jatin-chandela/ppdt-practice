@@ -66,7 +66,6 @@ function AppInner() {
           subtitle="Step 2 of 3"
           title="Note the characters"
           duration={60}
-          thumbUrl={session.scene.url}
           instructions={[
             'On paper, note: number of characters, age, sex, mood.',
             'Write down the central action / what is happening.',
@@ -83,7 +82,6 @@ function AppInner() {
           subtitle="Step 3 of 3"
           title="Write your story"
           duration={240}
-          thumbUrl={session.scene.url}
           instructions={[
             'Name + age of the hero.',
             'Past — what led to this moment.',
