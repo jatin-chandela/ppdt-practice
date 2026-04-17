@@ -10,28 +10,27 @@ export default function PicturePhase({ session, onDone, onCancel }) {
   const { seconds } = useTimer(DURATION, { autoStart: true, onExpire: onDone });
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 gap-8 animate-fade-in">
+    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 gap-5">
       <button
         onClick={onCancel}
-        className="absolute top-5 right-5 px-3 py-1.5 text-xs uppercase tracking-widest text-bone-400 hover:text-bone-100 border border-white/10 hover:border-white/20 rounded-md transition"
+        className="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-white border border-sand-300 hover:bg-sand-100 text-sm text-ink-700"
       >
         ← Back
       </button>
 
-      <div className="text-[11px] uppercase tracking-widest text-bone-500">
-        Observe · Set #{session.scene.id}
+      <div className="text-xs uppercase tracking-widest text-olive-700 font-semibold">
+        Observe — Set #{session.scene.id}
       </div>
 
-      <div className="relative w-full max-w-3xl aspect-[4/3] bg-black rounded-md overflow-hidden border border-white/5">
+      <div className="relative w-full max-w-3xl aspect-[4/3] bg-sand-100 rounded-xl overflow-hidden border border-sand-200">
         {!loaded && !failed && (
-          <div className="absolute inset-0 flex items-center justify-center text-bone-500 animate-pulse text-sm">
+          <div className="absolute inset-0 flex items-center justify-center text-ink-500 animate-pulse text-sm">
             Loading image…
           </div>
         )}
         {failed ? (
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-bone-400 gap-2 text-center px-6">
-            <div className="font-display text-4xl italic">no image</div>
-            <div className="text-sm">Check your connection and try another set.</div>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-ink-500 gap-2 text-center px-6">
+            <div className="text-sm">Couldn't load image. Check your connection.</div>
           </div>
         ) : (
           <img
@@ -39,7 +38,7 @@ export default function PicturePhase({ session, onDone, onCancel }) {
             alt={`PPDT scene ${session.scene.id}`}
             onLoad={() => setLoaded(true)}
             onError={() => setFailed(true)}
-            className={`w-full h-full object-contain bg-black transition-opacity duration-500 ${
+            className={`w-full h-full object-contain bg-black transition-opacity duration-300 ${
               loaded ? 'opacity-100' : 'opacity-0'
             }`}
           />
@@ -48,13 +47,13 @@ export default function PicturePhase({ session, onDone, onCancel }) {
 
       <Timer seconds={seconds} total={DURATION} />
 
-      <div className="text-xs text-bone-500 max-w-md text-center leading-relaxed">
+      <div className="text-xs text-ink-500 text-center max-w-md">
         Note — number of characters, age, sex, mood, and the central action.
       </div>
 
       <button
         onClick={onDone}
-        className="px-6 py-3 rounded-md bg-gold-400 hover:bg-gold-300 text-ink-950 font-medium text-sm transition"
+        className="px-6 py-2.5 rounded-lg bg-olive-600 hover:bg-olive-700 text-sand-50 font-semibold text-sm"
       >
         Finish early — next step
       </button>

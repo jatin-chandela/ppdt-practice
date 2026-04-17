@@ -8,17 +8,17 @@ function fmt(s) {
 
 export default function Timer({ seconds, total }) {
   const pct = total ? (seconds / total) * 100 : 0;
-  let color = 'text-bone-100';
-  let bar = 'bg-gold-400';
-  if (pct <= 33) { color = 'text-gold-300'; bar = 'bg-gold-400'; }
-  if (seconds <= 10) { color = 'text-red-300'; bar = 'bg-red-400'; }
+  let color = 'text-olive-700';
+  let bar = 'bg-olive-600';
+  if (pct <= 33) { color = 'text-khaki-600'; bar = 'bg-khaki-500'; }
+  if (seconds <= 10) { color = 'text-red-700'; bar = 'bg-red-600'; }
 
   return (
-    <div className="flex flex-col items-center gap-3">
-      <div className={`font-mono text-5xl font-medium tabular-nums tracking-tight ${color}`}>
+    <div className="flex flex-col items-center gap-2">
+      <div className={`font-mono text-4xl font-bold tabular-nums ${color}`}>
         {fmt(seconds)}
       </div>
-      <div className="w-48 h-px bg-white/10 overflow-hidden">
+      <div className="w-40 h-1.5 bg-sand-200 rounded overflow-hidden">
         <div className={`h-full ${bar} transition-all duration-500`} style={{ width: `${pct}%` }} />
       </div>
     </div>
