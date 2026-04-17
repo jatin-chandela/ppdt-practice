@@ -50,6 +50,13 @@ export default function PicturePhase({ session, onDone, onCancel }) {
       <div className="text-xs text-slate-500">
         Note: number of characters, age, sex, mood, and the central action.
       </div>
+
+      <button
+        onClick={onCancel}
+        className="mt-2 px-6 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-base text-slate-200 transition-colors"
+      >
+        ← Navigate Back
+      </button>
     </div>
   );
 }
