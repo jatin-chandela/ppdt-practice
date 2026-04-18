@@ -1,5 +1,6 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { supabase } from '../lib/supabase.js';
+import { useAuth } from '../lib/auth.jsx';
 
 function detectInAppBrowser() {
   if (typeof navigator === 'undefined') return { inApp: false, isAndroid: false };
@@ -9,15 +10,22 @@ function detectInAppBrowser() {
   return { inApp, isAndroid };
 }
 
-export default function LoginScreen() {
+export default function LoginModal({ onClose }) {
   const { inApp, isAndroid } = useMemo(detectInAppBrowser, []);
-  const [mode, setMode] = useState('login');
+  const { isAnonymous } = useAuth();
+  const [mode, setMode] = useState('signup');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose?.(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
 
   const handleGoogle = async () => {
     setLoading(true);
@@ -37,38 +45,75 @@ export default function LoginScreen() {
     setMessage(null);
 
     if (mode === 'signup') {
-      const { error } = await supabase.auth.signUp({
-        email,
-        password,
-        options: { data: { full_name: name } },
-      });
-      if (error) {
-        setError(error.message);
+      if (isAnonymous) {
+        const { error } = await supabase.auth.updateUser({
+          email,
+          password,
+          data: { full_name: name },
+        });
+        if (error) {
+          setError(error.message);
+        } else {
+          setMessage('Check your email for a confirmation link — your progress will stay linked to this account.');
+        }
       } else {
-        setMessage('Check your email for a confirmation link, then sign in.');
-        setMode('login');
+        const { error } = await supabase.auth.signUp({
+          email,
+          password,
+          options: { data: { full_name: name } },
+        });
+        if (error) {
+          setError(error.message);
+        } else {
+          setMessage('Check your email for a confirmation link, then sign in.');
+          setMode('login');
+        }
       }
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
-      if (error) setError(error.message);
+      if (error) {
+        setError(error.message);
+      } else {
+        onClose?.();
+      }
     }
     setLoading(false);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="w-full max-w-sm space-y-5 bg-white border border-sand-200 rounded-xl p-6 shadow-sm">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4"
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-sm bg-white border border-sand-200 rounded-xl p-6 space-y-5 shadow-lg relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute top-3 right-3 w-8 h-8 rounded-full hover:bg-sand-100 text-ink-500 hover:text-ink-900 text-sm"
+        >
+          ✕
+        </button>
+
         <div className="text-center">
-          <div className="text-xs uppercase tracking-widest text-olive-700 font-semibold">SSB Screening</div>
-          <h1 className="text-2xl font-bold mt-1 text-ink-900">PPDT Practice</h1>
-          <p className="text-ink-500 mt-1 text-sm">Sign in to save attempts.</p>
+          <div className="text-xs uppercase tracking-widest text-olive-700 font-semibold">
+            {mode === 'signup' ? 'Save your progress' : 'Welcome back'}
+          </div>
+          <h2 className="text-xl font-bold mt-1 text-ink-900">
+            {mode === 'signup' ? 'Create a free account' : 'Sign in'}
+          </h2>
+          <p className="text-ink-500 mt-1 text-sm">
+            {mode === 'signup'
+              ? 'Get AI feedback, save your story, and track your OLQ progress.'
+              : 'Pick up where you left off.'}
+          </p>
         </div>
 
         {inApp && (
           <div className="p-3 rounded-lg bg-olive-50 border border-olive-200 text-xs text-olive-800 space-y-2">
-            <div>
-              <strong>Google sign-in won't work in WhatsApp's browser.</strong> Either sign up with email below, or open this page in Chrome.
-            </div>
+            <div><strong>Google sign-in won't work in this browser.</strong> Use email below, or open the site in Chrome.</div>
             {isAndroid && (
               <a
                 href={`intent://${window.location.host}${window.location.pathname}#Intent;scheme=https;package=com.android.chrome;end`}
@@ -114,10 +159,10 @@ export default function LoginScreen() {
         {message && <div className="p-2.5 rounded-lg bg-olive-50 border border-olive-200 text-sm text-olive-700">{message}</div>}
 
         <div className="text-center text-sm text-ink-500">
-          {mode === 'login' ? (
-            <>No account? <button onClick={() => setMode('signup')} className="text-olive-700 hover:underline font-medium">Sign up</button></>
+          {mode === 'signup' ? (
+            <>Already have one? <button onClick={() => setMode('login')} className="text-olive-700 hover:underline font-medium">Sign in</button></>
           ) : (
-            <>Have one? <button onClick={() => setMode('login')} className="text-olive-700 hover:underline font-medium">Sign in</button></>
+            <>No account? <button onClick={() => setMode('signup')} className="text-olive-700 hover:underline font-medium">Create one</button></>
           )}
         </div>
       </div>

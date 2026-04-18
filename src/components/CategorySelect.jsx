@@ -4,15 +4,15 @@ import { useAuth } from '../lib/auth.jsx';
 import { getStats } from '../lib/storage.js';
 
 export default function CategorySelect({ onStart, lastSceneId, onOpenAttempts }) {
-  const { user } = useAuth();
+  const { user, isAnonymous } = useAuth();
   const [catId, setCatId] = useState('all');
   const [stats, setStats] = useState(null);
   const counts = countsByCategory();
 
   useEffect(() => {
-    if (!user) return;
+    if (!user || isAnonymous) return;
     getStats(user.id).then(setStats).catch(() => {});
-  }, [user]);
+  }, [user, isAnonymous]);
 
   useEffect(() => {
     const p = pool(catId);
@@ -100,7 +100,14 @@ export default function CategorySelect({ onStart, lastSceneId, onOpenAttempts })
             </button>
           </div>
 
-          {!stats ? (
+          {isAnonymous ? (
+            <div className="flex-1 flex items-center justify-center text-center">
+              <div>
+                <div className="text-ink-500 text-sm mb-1">Sign in to unlock</div>
+                <div className="text-xs text-ink-300">Track scores, see OLQ weak spots, and get AI feedback on your stories.</div>
+              </div>
+            </div>
+          ) : !stats ? (
             <div className="flex-1 flex items-center justify-center text-center">
               <div>
                 <div className="text-ink-500 text-sm mb-1">No data yet</div>

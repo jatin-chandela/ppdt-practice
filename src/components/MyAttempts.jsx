@@ -4,7 +4,7 @@ import { listAttempts, deleteAttempt, getStats } from '../lib/storage.js';
 import AIReview from './AIReview.jsx';
 
 export default function MyAttempts({ onBack }) {
-  const { user } = useAuth();
+  const { user, isAnonymous } = useAuth();
   const [rows, setRows] = useState([]);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -12,7 +12,7 @@ export default function MyAttempts({ onBack }) {
   const [reviewing, setReviewing] = useState(null);
 
   const load = async () => {
-    if (!user) return;
+    if (!user || isAnonymous) { setLoading(false); return; }
     setLoading(true);
     const [r, s] = await Promise.all([listAttempts(user.id), getStats(user.id)]);
     setRows(r);
@@ -20,7 +20,7 @@ export default function MyAttempts({ onBack }) {
     setLoading(false);
   };
 
-  useEffect(() => { load(); }, [user]);
+  useEffect(() => { load(); }, [user, isAnonymous]);
 
   const del = async (row) => {
     await deleteAttempt(row.id, row.photo_path);

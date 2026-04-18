@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AuthProvider, useAuth } from './lib/auth.jsx';
 import usePhase, { PHASES } from './hooks/usePhase.js';
-import LoginScreen from './components/LoginScreen.jsx';
+import LoginModal from './components/LoginModal.jsx';
 import CategorySelect from './components/CategorySelect.jsx';
 import PicturePhase from './components/PicturePhase.jsx';
 import TimerPhase from './components/TimerPhase.jsx';
@@ -10,10 +10,11 @@ import MyAttempts from './components/MyAttempts.jsx';
 import ProgressBar from './components/ProgressBar.jsx';
 
 function AppInner() {
-  const { user, loading, signOut } = useAuth();
+  const { user, loading, isAnonymous, signOut } = useAuth();
   const { phase, goTo, reset } = usePhase();
   const [session, setSession] = useState(null);
   const [lastSceneId, setLastSceneId] = useState(null);
+  const [loginOpen, setLoginOpen] = useState(false);
 
   if (loading) {
     return (
@@ -23,23 +24,33 @@ function AppInner() {
     );
   }
 
-  if (!user) return <LoginScreen />;
-
   const start = (s) => {
     setSession(s);
     setLastSceneId(s.scene.id);
     goTo(PHASES.PICTURE);
   };
 
+  const requireSignIn = () => setLoginOpen(true);
+
   const showProgress = [PHASES.PICTURE, PHASES.CHARACTER, PHASES.STORY].includes(phase);
 
   return (
     <div className="min-h-screen">
-      {/* User header */}
       {phase === PHASES.IDLE && (
         <div className="max-w-6xl mx-auto px-6 pt-3 flex items-center justify-end gap-3 text-xs text-ink-500">
-          <span>{user.email}</span>
-          <button onClick={signOut} className="hover:text-ink-900 font-medium">Sign out</button>
+          {isAnonymous ? (
+            <button
+              onClick={requireSignIn}
+              className="px-3 py-1.5 rounded-lg bg-olive-600 hover:bg-olive-700 text-sand-50 font-semibold"
+            >
+              Sign in to save progress
+            </button>
+          ) : (
+            <>
+              <span>{user?.email}</span>
+              <button onClick={signOut} className="hover:text-ink-900 font-medium">Sign out</button>
+            </>
+          )}
         </div>
       )}
 
@@ -49,7 +60,7 @@ function AppInner() {
         <CategorySelect
           onStart={start}
           lastSceneId={lastSceneId}
-          onOpenAttempts={() => goTo(PHASES.ATTEMPTS)}
+          onOpenAttempts={() => (isAnonymous ? requireSignIn() : goTo(PHASES.ATTEMPTS))}
         />
       )}
 
@@ -100,9 +111,12 @@ function AppInner() {
           session={session}
           onAgain={reset}
           onHome={reset}
-          onViewAttempts={() => goTo(PHASES.ATTEMPTS)}
+          onViewAttempts={() => (isAnonymous ? requireSignIn() : goTo(PHASES.ATTEMPTS))}
+          onRequireSignIn={requireSignIn}
         />
       )}
+
+      {loginOpen && <LoginModal onClose={() => setLoginOpen(false)} />}
     </div>
   );
 }
