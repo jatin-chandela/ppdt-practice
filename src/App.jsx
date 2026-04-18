@@ -1,6 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AuthProvider, useAuth } from './lib/auth.jsx';
 import usePhase, { PHASES } from './hooks/usePhase.js';
+
+const SESSION_KEY = 'ssb:session';
+const LAST_SCENE_KEY = 'ssb:lastSceneId';
+
+function loadSession() {
+  try {
+    const v = localStorage.getItem(SESSION_KEY);
+    return v ? JSON.parse(v) : null;
+  } catch { return null; }
+}
+
+function loadLastSceneId() {
+  try { return localStorage.getItem(LAST_SCENE_KEY) || null; } catch { return null; }
+}
 import LoginModal from './components/LoginModal.jsx';
 import CategorySelect from './components/CategorySelect.jsx';
 import PicturePhase from './components/PicturePhase.jsx';
@@ -11,10 +25,29 @@ import ProgressBar from './components/ProgressBar.jsx';
 
 function AppInner() {
   const { user, loading, isAnonymous, signOut } = useAuth();
-  const { phase, goTo, reset } = usePhase();
-  const [session, setSession] = useState(null);
-  const [lastSceneId, setLastSceneId] = useState(null);
+  const { phase, goTo, reset: resetPhase } = usePhase();
+  const [session, setSession] = useState(loadSession);
+  const [lastSceneId, setLastSceneId] = useState(loadLastSceneId);
   const [loginOpen, setLoginOpen] = useState(false);
+
+  useEffect(() => {
+    try {
+      if (session) localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+      else localStorage.removeItem(SESSION_KEY);
+    } catch {}
+  }, [session]);
+
+  useEffect(() => {
+    try {
+      if (lastSceneId) localStorage.setItem(LAST_SCENE_KEY, lastSceneId);
+      else localStorage.removeItem(LAST_SCENE_KEY);
+    } catch {}
+  }, [lastSceneId]);
+
+  const reset = () => {
+    setSession(null);
+    resetPhase();
+  };
 
   if (loading) {
     return (

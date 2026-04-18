@@ -5,7 +5,7 @@ import AIReview from './AIReview.jsx';
 
 export default function DoneScreen({ session, onAgain, onHome, onViewAttempts, onRequireSignIn }) {
   const { isAnonymous } = useAuth();
-  const [tab, setTab] = useState('save');
+  const [tab, setTab] = useState('review');
 
   return (
     <div className="min-h-screen flex flex-col items-center py-10 px-4 gap-5">
