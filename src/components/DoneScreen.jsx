@@ -6,6 +6,13 @@ import AIReview from './AIReview.jsx';
 export default function DoneScreen({ session, onAgain, onHome, onViewAttempts, onRequireSignIn }) {
   const { isAnonymous } = useAuth();
   const [tab, setTab] = useState('review');
+  const [sharedFile, setSharedFile] = useState(null);
+  const [sharedPreview, setSharedPreview] = useState(null);
+
+  const onPhotoSelected = (file, previewUrl) => {
+    setSharedFile(file);
+    setSharedPreview(previewUrl);
+  };
 
   return (
     <div className="min-h-screen flex flex-col items-center py-10 px-4 gap-5">
@@ -52,7 +59,10 @@ export default function DoneScreen({ session, onAgain, onHome, onViewAttempts, o
             </button>
           </div>
 
-          {tab === 'save' ? <UploadStory session={session} /> : <AIReview />}
+          {tab === 'save'
+            ? <UploadStory session={session} initialFile={sharedFile} initialPreview={sharedPreview} onPhotoSelected={onPhotoSelected} />
+            : <AIReview initialBlob={sharedFile} onPhotoSelected={onPhotoSelected} />
+          }
         </>
       )}
 

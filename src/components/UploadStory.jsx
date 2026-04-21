@@ -2,11 +2,11 @@ import React, { useRef, useState } from 'react';
 import { useAuth } from '../lib/auth.jsx';
 import { addAttempt } from '../lib/storage.js';
 
-export default function UploadStory({ session, onSaved }) {
+export default function UploadStory({ session, onSaved, initialFile = null, initialPreview = null, onPhotoSelected }) {
   const { user } = useAuth();
   const fileRef = useRef(null);
-  const [preview, setPreview] = useState(null);
-  const [file, setFile] = useState(null);
+  const [preview, setPreview] = useState(initialPreview);
+  const [file, setFile] = useState(initialFile);
   const [note, setNote] = useState('');
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -15,10 +15,12 @@ export default function UploadStory({ session, onSaved }) {
   const onPick = (e) => {
     const f = e.target.files?.[0];
     if (!f) return;
+    const url = URL.createObjectURL(f);
     setFile(f);
-    setPreview(URL.createObjectURL(f));
+    setPreview(url);
     setSaved(false);
     setError(null);
+    onPhotoSelected?.(f, url);
   };
 
   const save = async () => {

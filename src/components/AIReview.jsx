@@ -13,7 +13,7 @@ function fileToBase64(file) {
   });
 }
 
-export default function AIReview({ initialBlob = null, initialImageUrl = null }) {
+export default function AIReview({ initialBlob = null, initialImageUrl = null, onPhotoSelected }) {
   const fileRef = useRef(null);
   const [preview, setPreview] = useState(() => {
     if (initialBlob) return URL.createObjectURL(initialBlob);
@@ -27,15 +27,18 @@ export default function AIReview({ initialBlob = null, initialImageUrl = null })
   const [stage, setStage] = useState('idle'); // idle | sending | done | error
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [showPhoto, setShowPhoto] = useState(false);
 
   const onFileInput = (e) => {
     const f = e.target.files?.[0];
     if (!f) return;
+    const url = URL.createObjectURL(f);
     setFile(f);
-    setPreview(URL.createObjectURL(f));
+    setPreview(url);
     setResult(null);
     setError(null);
     setStage('idle');
+    onPhotoSelected?.(f, url);
   };
 
   const submit = async () => {
@@ -156,7 +159,26 @@ export default function AIReview({ initialBlob = null, initialImageUrl = null })
         </div>
       )}
 
-      {result && <ReviewResult result={result} />}
+      {result && (
+        <>
+          {preview && (
+            <div>
+              <button
+                onClick={() => setShowPhoto((v) => !v)}
+                className="text-xs text-slate-400 hover:text-slate-200 underline"
+              >
+                {showPhoto ? 'Hide story photo ▲' : 'View story photo ▼'}
+              </button>
+              {showPhoto && (
+                <div className="mt-2 rounded-lg overflow-hidden border border-slate-800 bg-black">
+                  <img src={preview} alt="your story" className="w-full max-h-96 object-contain" />
+                </div>
+              )}
+            </div>
+          )}
+          <ReviewResult result={result} />
+        </>
+      )}
     </div>
   );
 }
